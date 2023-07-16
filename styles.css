@@ -15,21 +15,25 @@ body {
     height: 100vh;
 }
 
+/* Navbar section */
+
 nav .container-fluid {
     color: #456268;
     background-color: #FCF8EC;
+    font-weight: bold;
+    padding: 0.7rem;
 }
 
 .navbar-brand {
     color: #FCF8EC;
     background-color: #456268;
-    padding: 8px;
-    font-family: 'Lalezar', cursive;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    z-index: 10;
 }
 
 #navbarNav .active {
     display: inline;
-    padding: 3px;
     background: linear-gradient(to left, transparent 50%, #D0E8F2 50%);
 }
 
@@ -140,6 +144,7 @@ hr {
 
 .lets-chat-box:hover #lets-chat-text {
     color: #FCF8EC;
+    font-weight: bold;
 }
 
 .explore-me {
@@ -150,6 +155,11 @@ hr {
 
 .explore-me a {
     color: #454545;
+}
+
+.explore-me a:hover {
+    color: #456268;
+    font-weight: bold;
 }
 
 .explore-me::after {
@@ -178,7 +188,11 @@ hr {
     justify-content: center;
     align-items: center;
     margin-left: auto;
+}
 
+.projects-box:hover {
+    background: #D0E8F2;
+    font-weight: bold;
 }
 
 .projects-text {
@@ -332,7 +346,7 @@ hr {
     background: #FCF8EC;
     border-radius: 3px;
     position: relative;
-    animation: fillBars 20s 1;
+    animation: fillBars 30s 1;
 }
 
 .skill-percentage::before{
@@ -363,12 +377,12 @@ hr {
 }
 
 @keyframes fillBars {
-from{
-    width: 0;
-}
-to{
-    width: 100%; 
-}
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%; 
+    }
 }
 .companies {
     display: flex;
