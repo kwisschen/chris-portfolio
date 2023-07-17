@@ -17,11 +17,17 @@ body {
 
 /* Navbar section */
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
 nav .container-fluid {
     color: #456268;
     background-color: #FCF8EC;
     font-weight: bold;
-    padding: 0.7rem;
 }
 
 .navbar-brand {
@@ -29,7 +35,7 @@ nav .container-fluid {
     background-color: #456268;
     padding: 10px;
     font-family: 'Permanent Marker', cursive;
-    z-index: 10;
+    z-index: 30;
 }
 
 #navbarNav .active {
@@ -260,10 +266,18 @@ hr {
 
 
 @media (max-width: 900px) {
+    #lemon-prototype {
+        padding-right: 10%;
+    }
+
     #cuddlepaws {
       margin-top: 30%;
       margin-bottom: 0;
       padding-bottom: 0;
+    }
+
+    #projects-heading {
+        text-align: center;
     }
 
     #first-project-text {
@@ -281,6 +295,11 @@ hr {
     .projects-right-dotted {
         margin-top: 30%;
     }
+
+    .projects-box {
+        margin-left: 0;
+    }
+
     .lets-chat-box {
         border: 0.5px solid #456268;
         background-color: #FCF8EC;
@@ -346,7 +365,7 @@ hr {
     background: #FCF8EC;
     border-radius: 3px;
     position: relative;
-    animation: fillBars 30s 1;
+    animation: fillBars 25s 1s;
 }
 
 .skill-percentage::before{
@@ -391,9 +410,92 @@ hr {
 }
 
 /* Footer section */
+
 #footer-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* PROFILE PAGE */
+
+/* Background section */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.typewriter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.typewriter h1 {
+    overflow: hidden;
+    visibility: hidden;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    animation: typewriter 3s steps(48) 0.5s forwards;
+  }
+  
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+#chris-pic {
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.summary {
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 0.5rem auto;
+}
+
+.job-description {
+    list-style: circle;
+    text-align: left;
+}
+
+.carousel-item img {
+    max-height: 600px;
+    object-fit: contain;
+}
+
+#carouselExampleIndicators .carousel-indicators button {
+    background: #79A3B1;
+    border-radius: 50%;;
+    height: 0.1px;
+}
