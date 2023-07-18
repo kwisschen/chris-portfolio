@@ -20,6 +20,7 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    padding: 0;
     width: 100%;
     z-index: 20;
 }
@@ -64,7 +65,7 @@ em {
 
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -83,7 +84,7 @@ a {
 
 hr {
     width: 90%;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
 
 .small-text {
@@ -97,10 +98,10 @@ hr {
 
 .lead.sub-heading {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: linear-gradient(to bottom, transparent 60%, #D0E8F2 40%);
+    display: inline;
 }
-
 
 .hero-left-dotted {
     position: absolute;
@@ -144,11 +145,11 @@ hr {
     margin-right: 5px;
 }
 
-.lets-chat-box:hover {
+.lets-chat-box:hover, .lets-chat-box:active {
     background: #456268;
 }
 
-.lets-chat-box:hover #lets-chat-text {
+.lets-chat-box:hover #lets-chat-text, .lets-chat-box:active #lets-chat-text {
     color: #FCF8EC;
     font-weight: bold;
 }
@@ -163,7 +164,7 @@ hr {
     color: #454545;
 }
 
-.explore-me a:hover {
+.explore-me a:hover, .explore-me a:active {
     color: #456268;
     font-weight: bold;
 }
@@ -196,7 +197,7 @@ hr {
     margin-left: auto;
 }
 
-.projects-box:hover {
+.projects-box:hover, .projects-box:active {
     background: #D0E8F2;
     font-weight: bold;
 }
@@ -421,8 +422,9 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
-
 
 
 /* PROFILE PAGE */
@@ -470,7 +472,7 @@ hr {
 }
 
 .summary {
-    width: 50%;
+    width: 70%;
     margin: 1rem auto;
     text-align: center;
 
@@ -498,4 +500,47 @@ li {
     background: #79A3B1;
     border-radius: 50%;;
     height: 0.1px;
+}
+
+
+/* PROJECTS PAGE */
+.centered-box {
+    border: 0.5px solid #456268;
+    font-size: 0.9rem;
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.centered-box:hover, .centered-box:active {
+    background: #D0E8F2;
+    font-weight: bold;
+}
+
+/* All hovers */
+
+@media (hover: hover) or (any-pointer: coarse) or (any-pointer: fine) {
+    .centered-box:hover {
+    background: #D0E8F2;
+    font-weight: bold;
+    }
+    .lets-chat-box:hover {
+        background: #456268;
+    }
+    .lets-chat-box:hover #lets-chat-text {
+        color: #FCF8EC;
+        font-weight: bold;
+    }
+    .explore-me a:hover {
+        color: #456268;
+        font-weight: bold;
+    }
+    .projects-box:hover {
+        background: #D0E8F2;
+        font-weight: bold;
+    }
 }
