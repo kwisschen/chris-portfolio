@@ -1,8 +1,15 @@
-/* Color Palette
+/* Color Palette:
 #FCF8EC
 #D0E8F2
 #79A3B1
 #456268 */
+
+/* Fonts:
+font-family: 'Playfair Display', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Permanent Marker', cursive; */
+
+
 
 * {
     margin: 0;
@@ -39,10 +46,18 @@ nav .container-fluid {
     z-index: 30;
 }
 
+
 #navbarNav .active {
     display: inline;
     background: linear-gradient(to left, transparent 50%, #D0E8F2 50%);
 }
+
+.navbar-icons {
+    margin: 0;
+    padding: 0;
+    filter: grayscale(0.5)
+}
+
 
 /* Hero section */
 
@@ -103,6 +118,62 @@ hr {
     display: inline;
 }
 
+/* Greeting animation */
+
+
+.english-text {
+    background: none;
+    animation: english;
+}
+
+.chinese-text {
+    background: none;
+    animation: chinese;
+}
+
+.japanese-text {
+    background: none;
+    animation: japanese;
+}
+
+.english-text, .chinese-text, .japanese-text {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(30, end);
+    animation-iteration-count: infinite;
+}
+
+@keyframes english {
+    0%, 33%, 66%, 100% {
+      width: 0;
+    }
+    10%, 23% {
+      width: 33%;
+    }
+}
+
+@keyframes chinese {
+    0%, 33%, 66%, 100% {
+      width: 0;
+    }
+    43%, 58% {
+      width: 28%;
+    }
+}
+
+@keyframes japanese {
+    0%, 33%, 66%, 100% {
+      width: 0;
+    }
+    76%, 90% {
+      width: 60%;
+    }
+}
+
+
 .hero-left-dotted {
     position: absolute;
     top: 2rem;
@@ -120,14 +191,40 @@ hr {
 }
 
 .lets-chat-box {
+    box-sizing: border-box;
     border: 0.5px solid #456268;
     background-color: #FCF8EC;
     font-size: 0.9rem;
     height: 4rem;
     width: 12rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.lets-chat-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #456268;
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.lets-chat-box:hover::before {
+    transform: translateX(0);
+}
+
+.lets-chat-box:active {
+    color: #FCF8EC;
+    font-weight: bold;
+    background: #456268;
 }
 
 #hero-box {
@@ -145,17 +242,8 @@ hr {
     margin-right: 5px;
 }
 
-.lets-chat-box:hover, .lets-chat-box:active {
-    background: #456268;
-}
-
-.lets-chat-box:hover #lets-chat-text, .lets-chat-box:active #lets-chat-text {
-    color: #FCF8EC;
-    font-weight: bold;
-}
-
 .explore-me {
-    display: inline;
+    display: inline-block;
     position: relative;
     font-size: 1rem;
 }
@@ -164,12 +252,11 @@ hr {
     color: #454545;
 }
 
-.explore-me a:hover, .explore-me a:active {
-    color: #456268;
-    font-weight: bold;
+.explore-me img {
+    margin-right: 5px;
 }
 
-.explore-me::after {
+.explore-me #home-explore::after {
     content: "";
     position: absolute;
     top: 55%;
@@ -182,24 +269,17 @@ hr {
 
 /* Projects section */
 
+
 #projects-heading {
     text-align: left;
-  }
-
-.projects-box {
-    border: 0.5px solid #456268;
-    font-size: 0.9rem;
-    height: 4rem;
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
 }
 
-.projects-box:hover, .projects-box:active {
-    background: #D0E8F2;
-    font-weight: bold;
+#all-projects {
+    background: none;
+}
+
+#all-projects::before {
+    background-color: #D0E8F2;
 }
 
 .projects-text {
@@ -209,22 +289,20 @@ hr {
 .projects-left-dotted {
     position: absolute;
     bottom: 20%;
-    right: 90%;
-    margin-right: -100px;
+    right: 80%;
     z-index: -1;
 }
 
 .projects-right-dotted {
     position: absolute;
     top: 20%;
-    left: 85%;
-    margin-left: -80px;
+    left: 70%;
     z-index: -1;
 }
   
 .top-dotted {
   position: absolute;
-  right: 10%;
+  right: 40%;
   bottom: 70%;
   z-index: -1;
   transform: rotate(90deg);
@@ -232,7 +310,7 @@ hr {
 
 .bottom-dotted {
   position: absolute;
-  left: 20%;
+  left: 40%;
   top: 80%;
   z-index: -1;
   transform: rotate(90deg);
@@ -245,82 +323,40 @@ hr {
 }
 
 .item-box {
+    border: 1px solid #456268;
     margin-top: 5%;
     margin-left: 0;
     height: 3rem;
     width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
 }
 
 #lemon-home {
+    width: 400px;
     filter: grayscale(0.4); 
 }
 
 #lemon-prototype {
-    transform: scale(1.2) translateX(2rem);
+    width: 500px;
+    transform: scale(1.2);
     filter: grayscale(0.4); 
 }
 
 #cuddlepaws {
-    transform: scale(0.6);
+    width: 500px;
+    transform: scale(0.7);
     filter: grayscale(0.3);
 }
 
 
-@media (max-width: 900px) {
-    #lemon-prototype {
-        padding-right: 10%;
-    }
-
-    #cuddlepaws {
-      margin-top: 30%;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    #projects-heading {
-        text-align: center;
-    }
-
-    #first-project-text {
-        transform: translateY(-3rem);
-    }
-
-    #second-project-text {
-        transform: translateY(-3rem);
-    }
-
-    #last-project-text {
-        transform: translateY(-3rem);
-    }
-
-    .projects-right-dotted {
-        margin-top: 30%;
-    }
-
-    .projects-box {
-        margin-left: 0;
-    }
-
-    .lets-chat-box {
-        border: 0.5px solid #456268;
-        background-color: #FCF8EC;
-        font-size: 0.8rem;
-        height: 3rem;
-        width: 10rem;
-        bottom: 1rem;
-        left: 30%;
-        right: 90%;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-  }
 
 /* Skills section */
 
 #skillset {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     background-color: #D0E8F2;
     display: flex;
@@ -351,7 +387,7 @@ hr {
     margin: 20px 0;
 }
 
-.skill{
+.skill {
     padding-bottom:12px;
 }
 
@@ -366,7 +402,7 @@ hr {
     background: #FCF8EC;
     border-radius: 3px;
     position: relative;
-    animation: fillBars 25s 1s;
+    animation: fillBars 28s 1s;
 }
 
 .skill-percentage::before{
@@ -412,11 +448,6 @@ hr {
 
 /* Footer section */
 
-#footer-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .footer {
     display: flex;
@@ -491,13 +522,29 @@ li {
     text-align: left;
 }
 
+/* Certificates section */
+
+#certificates {
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    background-color: #D0E8F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
 .carousel-item img {
     max-height: 600px;
     object-fit: contain;
 }
 
 #carouselExampleIndicators .carousel-indicators button {
-    background: #79A3B1;
+    background: #456268;
     border-radius: 50%;;
     height: 0.1px;
 }
@@ -516,31 +563,179 @@ li {
     margin: auto;
 }
 
-.centered-box:hover, .centered-box:active {
-    background: #D0E8F2;
-    font-weight: bold;
+
+/* CONTACTS PAGE */
+
+#contact-heading {
+    font-family: 'Montserrat', sans-serif;
 }
+
+.contact-list ul li p {
+    font-size: 20px;
+}
+
+.contact-list ul li {
+    margin: 2rem auto;
+}
+
+ul li p img {
+    margin-right: 1rem;
+}
+
+
+#workspace-images {
+    position: relative;
+  }
+  
+  #workspace-pic,
+  #background-pic {
+    max-width: 100%;
+    display: block;
+  }
+  
+  #background-pic {
+    position: absolute;
+    bottom: 12%;
+    left: 12%;
+    z-index: -1;
+    filter: grayscale(1.5);
+  }
+
 
 /* All hovers */
 
-@media (hover: hover) or (any-pointer: coarse) or (any-pointer: fine) {
-    .centered-box:hover {
+@media (hover: hover) or (active: active) or (any-pointer: coarse) or (any-pointer: fine) {
+    .centered-box:hover, .centered-box:active {
     background: #D0E8F2;
     font-weight: bold;
     }
-    .lets-chat-box:hover {
+    .lets-chat-box:hover, .lets-chat-box:active {
         background: #456268;
     }
-    .lets-chat-box:hover #lets-chat-text {
+    .lets-chat-box:hover #lets-chat-text, .lets-chat-box:active #lets-chat-text {
         color: #FCF8EC;
         font-weight: bold;
     }
-    .explore-me a:hover {
+    .explore-me a:hover,.explore-me a:active {
         color: #456268;
         font-weight: bold;
     }
-    .projects-box:hover {
-        background: #D0E8F2;
+    #all-projects:hover, #all-projects:active {
+        background: #79A3B1;
+        font-weight: bold;
+    }
+    .projects-text:hover, .projects-text:active {
+        color: #FCF8EC;
+    }
+    .item-box:hover, .item-box:active {
+        background: #79A3B1;
         font-weight: bold;
     }
 }
+
+/* All media queries */
+
+@media (max-width: 992px) {
+    
+    #lemon-home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #lemon-prototype {
+        padding: 10px;
+        transform: scale(1.4);
+    }
+
+    #cuddlepaws {
+      margin-top: 20%;
+    }
+
+    #projects-heading {
+        text-align: center;
+        margin: auto;
+    }
+
+    #all-projects {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    .flex-center {
+        position: relative;
+    }
+
+    .item-box {
+        height: 2.5rem;
+        width: 5rem;
+        font-size: 0.8rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+    }
+
+    #first-project-text {
+        transform: translateY(-3rem);
+    }
+
+    #second-project-text {
+        transform: translateY(-3rem);
+    }
+
+    #last-project-text {
+        transform: translateY(-3rem);
+    }
+
+    .top-dotted {
+        position: absolute;
+        right: 40%;
+        bottom: 70%;
+        z-index: -1;
+        transform: rotate(90deg);
+    }
+      
+    .bottom-dotted {
+        position: absolute;
+        left: 35%;
+        top: 80%;
+        z-index: -1;
+        transform: rotate(90deg);
+    }
+
+    .projects-left-dotted {
+        position: absolute;
+        bottom: 20%;
+        right: 70%;
+        z-index: -1;
+    }
+    
+    .projects-right-dotted {
+        position: absolute;
+        top: 25%;
+        left: 70%;
+    }
+
+    .lets-chat-box {
+        font-size: 0.8rem;
+        height: 3rem;
+        width: 10rem;
+        bottom: 1rem;
+        left: 30%;
+        right: 90%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-box {
+        left: auto;
+        right:auto;
+    }
+  }
