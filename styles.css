@@ -228,12 +228,6 @@ hr {
   transform: translateX(0);
 }
 
-.lets-chat-box:active {
-  color: #fcf8ec;
-  font-weight: bold;
-  background: #456268;
-}
-
 #hero-box {
   position: absolute;
   bottom: 2rem;
@@ -454,8 +448,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
 }
 
 /* PROFILE PAGE */
@@ -600,7 +592,7 @@ ul li p img {
 @media (hover: hover) or (active: active) or (any-pointer: coarse) or (any-pointer: fine) {
   .centered-box:hover,
   .centered-box:active {
-    background: #d0e8f2;
+    background: #79A3B1;
     font-weight: bold;
   }
   .lets-chat-box:hover,
@@ -642,32 +634,26 @@ ul li p img {
     align-items: center;
     margin: auto;
   }
-
   #lemon-prototype {
     padding: 10px;
     transform: scale(1.4);
   }
-
   #cuddlepaws {
     margin-top: 20%;
   }
-
   #projects-heading {
     text-align: center;
     margin: auto;
   }
-
   #all-projects {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
-
   .flex-center {
     position: relative;
   }
-
   .item-box {
     height: 2.5rem;
     width: 5rem;
@@ -677,19 +663,15 @@ ul li p img {
     align-items: center;
     margin: auto;
   }
-
   #first-project-text {
     transform: translateY(-3rem);
   }
-
   #second-project-text {
     transform: translateY(-3rem);
   }
-
   #last-project-text {
     transform: translateY(-3rem);
   }
-
   .top-dotted {
     position: absolute;
     right: 40%;
@@ -697,7 +679,6 @@ ul li p img {
     z-index: -1;
     transform: rotate(90deg);
   }
-
   .bottom-dotted {
     position: absolute;
     left: 35%;
@@ -705,20 +686,17 @@ ul li p img {
     z-index: -1;
     transform: rotate(90deg);
   }
-
   .projects-left-dotted {
     position: absolute;
     bottom: 20%;
     right: 70%;
     z-index: -1;
   }
-
   .projects-right-dotted {
     position: absolute;
     top: 25%;
     left: 70%;
   }
-
   .lets-chat-box {
     font-size: 0.8rem;
     height: 3rem;
@@ -731,9 +709,25 @@ ul li p img {
     justify-content: center;
     align-items: center;
   }
-
   #contact-box {
-    left: auto;
-    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    bottom: 0;
+  }
+  .companies {
+    transform: scale(0.7);
+  }
+}
+
+@media (min-width: 993px) {
+  #contact-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+  }
+  hr.mb-2 {
+    margin-top: 10%;
   }
 }
