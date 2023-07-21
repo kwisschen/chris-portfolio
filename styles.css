@@ -279,7 +279,7 @@ hr {
 }
 
 #all-projects::before {
-  background-color: #d0e8f2;
+  background-color: #79A3B1;
 }
 
 .projects-text {
@@ -469,21 +469,22 @@ hr {
 
 .typewriter h1 {
   overflow: hidden;
-  visibility: hidden;
   white-space: nowrap;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  animation: typewriter 3s steps(48) 0.5s forwards;
+  opacity: 0;
+  animation: typewriter 2.5s steps(48) 0.5s forwards;
 }
 
 @keyframes typewriter {
   from {
     width: 0;
+    opacity: 1;
   }
   to {
-    visibility: visible;
     width: 100%;
+    opacity: 1;
   }
 }
 
@@ -708,6 +709,9 @@ ul li p img {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .typewriter h1 {
+    animation: typewriter 1s steps(32) 0.5s forwards;
   }
   #contact-box {
     left: 50%;
