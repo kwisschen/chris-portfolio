@@ -8,7 +8,6 @@
 font-family: 'Playfair Display', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Permanent Marker', cursive; */
-
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,6 @@ body {
 }
 
 /* Navbar section */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -56,7 +54,6 @@ nav .container-fluid {
 }
 
 /* Hero section */
-
 h1 {
   font-family: "Playfair Display", serif;
 }
@@ -114,7 +111,6 @@ hr {
 }
 
 /* Greeting animation */
-
 .english-text {
   background: none;
   animation: english;
@@ -269,7 +265,6 @@ hr {
 }
 
 /* Projects section */
-
 #projects-heading {
   text-align: left;
 }
@@ -279,7 +274,7 @@ hr {
 }
 
 #all-projects::before {
-  background-color: #79A3B1;
+  background-color: #79a3b1;
 }
 
 .projects-text {
@@ -352,7 +347,6 @@ hr {
 }
 
 /* Skills section */
-
 #skillset {
   width: 100%;
   margin: 0 auto;
@@ -443,7 +437,6 @@ hr {
 }
 
 /* Footer section */
-
 .footer {
   display: flex;
   justify-content: center;
@@ -451,7 +444,6 @@ hr {
 }
 
 /* PROFILE PAGE */
-
 .profile-container {
   display: flex;
   justify-content: center;
@@ -512,12 +504,9 @@ li {
   text-align: left;
 }
 
-/* Certificates section */
-
 #certificates {
   width: 100%;
-  margin-top: -50px;
-  margin-bottom: 50px;
+  margin-top: 10%;
   background-color: #d0e8f2;
   display: flex;
   flex-direction: column;
@@ -539,7 +528,6 @@ li {
 }
 
 /* PROJECTS PAGE */
-
 .centered-box {
   border: 0.5px solid #456268;
   font-size: 0.9rem;
@@ -553,7 +541,6 @@ li {
 }
 
 /* CONTACTS PAGE */
-
 #contact-heading {
   font-family: "Montserrat", sans-serif;
 }
@@ -589,11 +576,10 @@ ul li p img {
 }
 
 /* All hovers */
-
 @media (hover: hover) or (active: active) or (any-pointer: coarse) or (any-pointer: fine) {
   .centered-box:hover,
   .centered-box:active {
-    background: #79A3B1;
+    background: #79a3b1;
     font-weight: bold;
   }
   .lets-chat-box:hover,
@@ -627,7 +613,6 @@ ul li p img {
 }
 
 /* All media queries */
-
 @media (max-width: 992px) {
   #lemon-home {
     flex-direction: column;
@@ -668,7 +653,7 @@ ul li p img {
     transform: translateY(-3rem);
   }
   #second-project-text {
-    transform: translateY(-3rem);
+    transform: translateY(-5rem);
   }
   #last-project-text {
     transform: translateY(-3rem);
@@ -721,6 +706,11 @@ ul li p img {
   }
   .companies {
     transform: scale(0.7);
+  }
+  .project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
