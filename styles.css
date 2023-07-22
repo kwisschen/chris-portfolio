@@ -318,7 +318,7 @@ hr {
 }
 
 .item-box {
-  border: 1px solid #456268;
+  border: 0.5px solid #456268;
   margin-top: 5%;
   margin-left: 0;
   height: 3rem;
