@@ -698,6 +698,9 @@ ul li p img {
   .typewriter h1 {
     animation: typewriter 1s steps(32) 0.5s forwards;
   }
+  .footer p {
+    text-align: justify;
+  }
   #contact-box {
     left: 50%;
     transform: translateX(-50%);
