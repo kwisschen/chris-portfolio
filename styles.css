@@ -34,6 +34,11 @@ nav .container-fluid {
   font-weight: bold;
 }
 
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .navbar-brand {
   color: #fcf8ec;
   background-color: #456268;
@@ -54,6 +59,13 @@ nav .container-fluid {
 }
 
 /* Hero section */
+#hero-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 h1 {
   font-family: "Playfair Display", serif;
 }
@@ -306,7 +318,7 @@ hr {
 .bottom-dotted {
   position: absolute;
   left: 40%;
-  top: 80%;
+  top: 70%;
   z-index: -1;
   transform: rotate(90deg);
 }
@@ -329,32 +341,33 @@ hr {
   font-size: 0.9rem;
 }
 
+#beats-home {
+  height: 300px;
+  width: 500px;
+  transform: scale(1.1);
+  filter: grayscale(0.2);
+}
+
+#auction-component {
+  width: 500px;
+  filter: grayscale(0.3);
+}
+
 #lemon-home {
   width: 400px;
-  filter: grayscale(0.4);
-}
-
-#lemon-prototype {
-  width: 500px;
-  transform: scale(1.2);
-  filter: grayscale(0.4);
-}
-
-#cuddlepaws {
-  width: 500px;
-  transform: scale(0.7);
   filter: grayscale(0.3);
 }
 
 /* Skills section */
 #skillset {
   width: 100%;
-  margin: 0 auto;
   background-color: #d0e8f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* margin: 0 auto; */
+  margin-top: 2rem;
 }
 
 #learning {
@@ -614,11 +627,14 @@ ul li p img {
 
 /* All media queries */
 @media (max-width: 992px) {
-  #lemon-home {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+  .top-dotted {
+    visibility: hidden;
+  }
+  .bottom-dotted {
+    visibility: hidden;
+  }
+  #second-project-images {
+    transform: translateY(-25%);
   }
   #lemon-prototype {
     padding: 10px;
@@ -650,13 +666,13 @@ ul li p img {
     margin: auto;
   }
   #first-project-text {
-    transform: translateY(-3rem);
+    transform: translateY(-5rem);
   }
   #second-project-text {
     transform: translateY(-5rem);
   }
   #last-project-text {
-    transform: translateY(-3rem);
+    transform: translateY(-5rem);
   }
   .top-dotted {
     position: absolute;
