@@ -636,12 +636,15 @@ ul li p img {
     transform: translateY(-25%);
   }
   #beats-home {
-    height: 280px;
-    min-width: 280px;
+    height: 300px;
+    min-width: 320px;
+  }
+  #lemon-home {
+    max-width: 350px;
   }
   #lemon-prototype {
     padding: 10px;
-    transform: scale(1.4);
+    min-height: 240px;
   }
   #cuddlepaws {
     margin-top: 20%;
