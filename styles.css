@@ -15,7 +15,7 @@ font-family: 'Permanent Marker', cursive; */
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -59,13 +59,6 @@ nav .container-fluid {
 }
 
 /* Hero section */
-#hero-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
 }
@@ -120,6 +113,97 @@ hr {
   font-size: 1.5rem;
   background: linear-gradient(to bottom, transparent 60%, #d0e8f2 40%);
   display: inline;
+}
+
+#hero-container {
+  padding: 1.5rem 1rem;
+}
+
+#hero-box {
+  position: absolute;
+  bottom: 5rem;
+  right: 80%;
+  z-index: 1;
+}
+
+.hero-left-dotted {
+  position: absolute;
+  top: 4rem;
+  right: 100%;
+  margin-right: -100px;
+  z-index: -1;
+}
+
+.hero-right-dotted {
+  position: absolute;
+  bottom: 4rem;
+  left: 100%;
+  margin-left: -100px;
+  z-index: -1;
+}
+
+.lets-chat-box {
+  box-sizing: border-box;
+  border: 0.5px solid #456268;
+  background-color: #fcf8ec;
+  font-size: 0.9rem;
+  height: 4rem;
+  width: 12rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: all 0.4s;
+  overflow: hidden;
+}
+
+.lets-chat-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #456268;
+  transition: all 0.2s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+.lets-chat-box:hover::before {
+  transform: translateX(0);
+}
+
+#lets-chat-text {
+  color: #454545;
+}
+
+#lets-chat-text > img {
+  margin-right: 5px;
+}
+
+.explore-me {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+}
+
+.explore-me a {
+  color: #454545;
+}
+
+.explore-me img {
+  margin-right: 5px;
+}
+
+.explore-me #home-explore::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  right: -100%;
+  width: 90%;
+  height: 0.5px;
+  background-color: #454545;
+  transform: translateY(-50%);
 }
 
 /* Greeting animation */
@@ -187,93 +271,6 @@ hr {
   90% {
     width: 100%;
   }
-}
-
-.hero-left-dotted {
-  position: absolute;
-  top: 2rem;
-  right: 100%;
-  margin-right: -100px;
-  z-index: -1;
-}
-
-.hero-right-dotted {
-  position: absolute;
-  bottom: 3rem;
-  left: 100%;
-  margin-left: -80px;
-  z-index: -1;
-}
-
-.lets-chat-box {
-  box-sizing: border-box;
-  border: 0.5px solid #456268;
-  background-color: #fcf8ec;
-  font-size: 0.9rem;
-  height: 4rem;
-  width: 12rem;
-  display: grid;
-  place-items: center;
-  position: relative;
-  transition: all 0.4s;
-  overflow: hidden;
-}
-
-.lets-chat-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #456268;
-  transition: all 0.2s;
-  z-index: -1;
-  transform: translateX(-100%);
-}
-
-.lets-chat-box:hover::before {
-  transform: translateX(0);
-}
-
-#hero-box {
-  position: absolute;
-  bottom: 2rem;
-  right: 90%;
-  z-index: 1;
-}
-
-#lets-chat-text {
-  color: #454545;
-}
-
-#lets-chat-text > img {
-  margin-right: 5px;
-}
-
-.explore-me {
-  display: inline-block;
-  position: relative;
-  font-size: 1rem;
-}
-
-.explore-me a {
-  color: #454545;
-}
-
-.explore-me img {
-  margin-right: 5px;
-}
-
-.explore-me #home-explore::after {
-  content: "";
-  position: absolute;
-  top: 55%;
-  right: -100%;
-  width: 90%;
-  height: 0.5px;
-  background-color: #454545;
-  transform: translateY(-50%);
 }
 
 /* Projects section */
@@ -359,13 +356,12 @@ hr {
 
 /* Skills section */
 #skillset {
-  width: 100%;
+  width: 100vw;
   background-color: #d0e8f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 0 auto; */
   margin-top: 2rem;
 }
 
@@ -636,18 +632,12 @@ ul li p img {
     transform: translateY(-25%);
   }
   #beats-home {
-    height: 300px;
-    min-width: 320px;
-  }
-  .position-relative #beats-home {
-    transform: translateX(-5%);
-
+    width: 100%;
+    max-height: 300px;
   }
   #lemon-home {
-    max-width: 320px;
-  }
-  .position-relative #lemon-home {
-    transform: translateX(-5%);
+    width: 100%;
+    max-width: 350px;
   }
   #lemon-prototype {
     padding: 10px;
@@ -705,12 +695,11 @@ ul li p img {
   .projects-left-dotted {
     position: absolute;
     bottom: 20%;
-    right: 70%;
-    z-index: -1;
+    right: 80%;
   }
   .projects-right-dotted {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 70%;
   }
   .lets-chat-box {
