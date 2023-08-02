@@ -639,12 +639,20 @@ ul li p img {
     height: 300px;
     min-width: 320px;
   }
+  .position-relative #beats-home {
+    transform: translateX(-5%);
+
+  }
   #lemon-home {
-    max-width: 350px;
+    max-width: 320px;
+  }
+  .position-relative #lemon-home {
+    transform: translateX(-5%);
   }
   #lemon-prototype {
     padding: 10px;
-    min-height: 240px;
+    min-height: 200px;
+    min-width: 320px;
   }
   #cuddlepaws {
     margin-top: 20%;
