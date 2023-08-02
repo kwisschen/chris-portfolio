@@ -342,10 +342,9 @@ hr {
 }
 
 #beats-home {
-  height: 300px;
-  width: 500px;
-  transform: scale(1.1);
-  filter: grayscale(0.2);
+  height: 400px;
+  width: 600px;
+  filter: grayscale(0.2); 
 }
 
 #auction-component {
@@ -636,6 +635,10 @@ ul li p img {
   #second-project-images {
     transform: translateY(-25%);
   }
+  #beats-home {
+    height: 280px;
+    min-width: 280px;
+  }
   #lemon-prototype {
     padding: 10px;
     transform: scale(1.4);
@@ -705,7 +708,6 @@ ul li p img {
     width: 10rem;
     bottom: 1rem;
     left: 30%;
-    right: 90%;
     z-index: 1;
     display: flex;
     justify-content: center;
