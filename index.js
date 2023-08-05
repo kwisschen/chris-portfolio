@@ -107,7 +107,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#footer-head");
-  const triggerPosition = targetElement.offset().top - $(window).height() + 200;
+  const triggerPosition = targetElement.offset().top - $(window).height() + 100;
 
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
@@ -125,7 +125,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#footer-late");
-  const triggerPosition = targetElement.offset().top - $(window).height() + 1800;
+  const triggerPosition = targetElement.offset().top - $(window).height() + 1500;
 
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
