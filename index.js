@@ -105,50 +105,32 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  const targetElement = $("#footer-head");
-  const triggerPosition = targetElement.offset().top - $(window).height() + 100;
-  let animationTriggered = false;
+  const targetElement1 = $("#footer-head");
+  const targetElement2 = $("footer-late");
+  const triggerPosition1 = targetElement1.offset().top - $(window).height() + 100;
+  const triggerPosition2 = targetElement2.offset().top - $(window).height() + 1500;
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() >= triggerPosition && !animationTriggered) {
+    if ($(this).scrollTop() >= triggerPosition1) {
       setTimeout(function() {
-        targetElement.css({
+        targetElement1.css({
         transform: 'translateY(0)',
         opacity: 1
       });
       }, 500)
-      animationTriggered = true;
     }
-  });
-});
-
-$(document).ready(function() {
-  const targetElement = $("#footer-late");
-  const triggerPosition = targetElement.offset().top - $(window).height() + 1500;
-  let animationTriggered = false;
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() >= triggerPosition && !animationTriggered) {
+    if ($(this).scrollTop() >= triggerPosition2) {
       setTimeout(function() {
-        targetElement.css({
-          transform: 'translateY(0)',
-          opacity: 1
-        }).addClass('animation-triggered');
-      }, 500);
-      animationTriggered = true;
+        targetElement2.css({
+        transform: 'translateY(0)',
+        opacity: 1
+      });
+      }, 500)
     }
   });
-
-  // Check if the animation has already been triggered on subsequent page loads
-  if (targetElement.hasClass('animation-triggered')) {
-    targetElement.css({
-      transform: 'translateY(0)',
-      opacity: 1
-    });
-  }
 });
 
-// Original version that only runs on first page load and not on subsequent refreshes
+// Original block for #footer-late
 // $(document).ready(function() {
 //   const targetElement = $("#footer-late");
 //   const triggerPosition = targetElement.offset().top - $(window).height() + 1500;
