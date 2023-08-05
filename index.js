@@ -106,16 +106,17 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   const targetElement = $("#footer-head");
-  const triggerPosition = targetElement.offset().top - $(window).height() + 250;
   let animationTriggered = false;
 
   $(window).scroll(function() {
+    const triggerPosition = targetElement.offset().top - $(window).height() +100 ;
+    
     if ($(this).scrollTop() >= triggerPosition && !animationTriggered) {
       setTimeout(function() {
         targetElement.css({
-        transform: 'translateY(0)',
-        opacity: 1
-      });
+          transform: 'translateY(0)',
+          opacity: 1
+        });
       }, 500)
       animationTriggered = true;
     }
