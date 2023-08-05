@@ -105,32 +105,23 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  const targetElement1 = $("#footer-head");
-  const targetElement2 = $("footer-late");
-  const triggerPosition1 = targetElement1.offset().top - $(window).height() + 100;
-  const triggerPosition2 = targetElement2.offset().top - $(window).height() + 1500;
+  const targetElement = $("#footer-head");
+  const triggerPosition = targetElement.offset().top - $(window).height() + 250;
+  let animationTriggered = false;
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() >= triggerPosition1) {
+    if ($(this).scrollTop() >= triggerPosition && !animationTriggered) {
       setTimeout(function() {
-        targetElement1.css({
+        targetElement.css({
         transform: 'translateY(0)',
         opacity: 1
       });
       }, 500)
-    }
-    if ($(this).scrollTop() >= triggerPosition2) {
-      setTimeout(function() {
-        targetElement2.css({
-        transform: 'translateY(0)',
-        opacity: 1
-      });
-      }, 500)
+      animationTriggered = true;
     }
   });
 });
 
-// Original block for #footer-late
 // $(document).ready(function() {
 //   const targetElement = $("#footer-late");
 //   const triggerPosition = targetElement.offset().top - $(window).height() + 1500;

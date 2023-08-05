@@ -470,11 +470,11 @@ hr {
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-#footer-late {
+/* #footer-late {
   transform: translateY(100%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
+} */
 
 /* PROFILE PAGE */
 
