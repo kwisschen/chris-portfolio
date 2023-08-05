@@ -123,19 +123,17 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  let animationTriggered = false;
   const targetElement = $("#footer-late");
   const triggerPosition = targetElement.offset().top - $(window).height() + 1500;
 
   $(window).scroll(function() {
-    if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
+    if ($(this).scrollTop() >= triggerPosition) {
       setTimeout(function() {
         targetElement.css({
         transform: 'translateY(0)',
         opacity: 1
       });
       }, 500)
-      animationTriggered = true;
     }
   });
 });
