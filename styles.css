@@ -58,6 +58,10 @@ nav .container-fluid {
   filter: grayscale(0.5);
 }
 
+.scrolled {
+  opacity: 0.9;
+}
+
 /* Hero section */
 h1 {
   font-family: "Playfair Display", serif;
@@ -83,11 +87,6 @@ h2 {
 h3 {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
-}
-
-h6 {
-  font-family: "Montserrat", sans-serif;
-  color: #79a3b1;
 }
 
 a {
@@ -187,6 +186,12 @@ hr {
   font-size: 1rem;
 }
 
+#hero-text .explore-me {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
 .explore-me a {
   color: #454545;
 }
@@ -275,7 +280,14 @@ hr {
 
 /* Projects section */
 #projects-heading {
-  text-align: left;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.blue-heading {
+  font-family: "Montserrat", sans-serif;
+  color: #79a3b1;
 }
 
 #all-projects {
@@ -400,7 +412,7 @@ hr {
   background: #fcf8ec;
   border-radius: 3px;
   position: relative;
-  animation: fillBars 24s 1s;
+  animation: fillBars 6s;
 }
 
 .skill-percentage::before {
@@ -452,7 +464,26 @@ hr {
   align-items: center;
 }
 
+#footer-head {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#footer-late {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
 /* PROFILE PAGE */
+
+#intro {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
 .profile-container {
   display: flex;
   justify-content: center;
@@ -554,6 +585,9 @@ li {
 /* CONTACTS PAGE */
 #contact-heading {
   font-family: "Montserrat", sans-serif;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .contact-list ul li p {
@@ -631,7 +665,7 @@ ul li p img {
   .bottom-dotted {
     visibility: hidden;
   }
-  #second-project-images {
+  #second-project-image {
     transform: translateY(-25%);
   }
   #beats-home {
@@ -678,7 +712,7 @@ ul li p img {
   #second-project-text {
     transform: translateY(-5rem);
   }
-  #last-project-text {
+  #third-project-text {
     transform: translateY(-5rem);
   }
   .top-dotted {
