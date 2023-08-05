@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
     });
   });
-// vanilla JavaScript version
+// Vanilla JavaScript version
 // document.addEventListener("DOMContentLoaded", function() {
 //     const navbar = document.querySelector(".navbar-collapse");
 //     const toggleButton = document.querySelector(".navbar-toggler");
@@ -105,12 +105,12 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  let animationTriggered = false;
   const targetElement = $("#footer-head");
   const triggerPosition = targetElement.offset().top - $(window).height() + 100;
+  let animationTriggered = false;
 
   $(window).scroll(function() {
-    if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
+    if ($(this).scrollTop() >= triggerPosition && !animationTriggered) {
       setTimeout(function() {
         targetElement.css({
         transform: 'translateY(0)',
@@ -125,15 +125,42 @@ $(document).ready(function() {
 $(document).ready(function() {
   const targetElement = $("#footer-late");
   const triggerPosition = targetElement.offset().top - $(window).height() + 1500;
+  let animationTriggered = false;
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() >= triggerPosition) {
+    if ($(this).scrollTop() >= triggerPosition && !animationTriggered) {
       setTimeout(function() {
         targetElement.css({
-        transform: 'translateY(0)',
-        opacity: 1
-      });
-      }, 500)
+          transform: 'translateY(0)',
+          opacity: 1
+        }).addClass('animation-triggered');
+      }, 500);
+      animationTriggered = true;
     }
   });
+
+  // Check if the animation has already been triggered on subsequent page loads
+  if (targetElement.hasClass('animation-triggered')) {
+    targetElement.css({
+      transform: 'translateY(0)',
+      opacity: 1
+    });
+  }
 });
+
+// Original version that only runs on first page load and not on subsequent refreshes
+// $(document).ready(function() {
+//   const targetElement = $("#footer-late");
+//   const triggerPosition = targetElement.offset().top - $(window).height() + 1500;
+
+//   $(window).scroll(function() {
+//     if ($(this).scrollTop() >= triggerPosition) {
+//       setTimeout(function() {
+//         targetElement.css({
+//         transform: 'translateY(0)',
+//         opacity: 1
+//       });
+//       }, 500)
+//     }
+//   });
+// });
