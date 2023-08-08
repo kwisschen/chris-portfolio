@@ -470,12 +470,6 @@ hr {
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-/* #footer-late {
-  transform: translateY(100%);
-  opacity: 0;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-} */
-
 /* PROFILE PAGE */
 
 #intro {
@@ -658,7 +652,7 @@ ul li p img {
 }
 
 /* All media queries */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .top-dotted {
     visibility: hidden;
   }
@@ -772,7 +766,7 @@ ul li p img {
   }
 }
 
-@media (min-width: 993px) {
+@media (min-width: 769px) {
   #contact-box {
     position: absolute;
     left: 50%;
