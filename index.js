@@ -122,19 +122,3 @@ $(document).ready(function() {
     }
   });
 });
-
-// $(document).ready(function() {
-//   const targetElement = $("#footer-late");
-//   const triggerPosition = targetElement.offset().top - $(window).height() + 1500;
-
-//   $(window).scroll(function() {
-//     if ($(this).scrollTop() >= triggerPosition) {
-//       setTimeout(function() {
-//         targetElement.css({
-//         transform: 'translateY(0)',
-//         opacity: 1
-//       });
-//       }, 500)
-//     }
-//   });
-// });
