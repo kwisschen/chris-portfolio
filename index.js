@@ -77,6 +77,7 @@ $(document).ready(function() {
   const targetElement = $("#projects-heading");
   const triggerPosition = targetElement.offset().top - $(window).height() + 200;
 
+
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
       setTimeout(function() {
@@ -93,8 +94,8 @@ $(document).ready(function() {
 $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#skillset");
-  const triggerPosition = targetElement.offset().top - $(window).height();
   const animateElement = $(".skill-bar div");
+  const triggerPosition = targetElement.offset().top - $(window).height() + 200;
 
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
@@ -105,12 +106,11 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  const targetElement = $("#footer-head");
   let animationTriggered = false;
+  const targetElement = $("#footer-head");
 
   $(window).scroll(function() {
-    const triggerPosition = targetElement.offset().top - $(window).height() +100 ;
-    
+    const triggerPosition = targetElement.offset().top - $(window).height() + 100;
     if ($(this).scrollTop() >= triggerPosition && !animationTriggered) {
       setTimeout(function() {
         targetElement.css({

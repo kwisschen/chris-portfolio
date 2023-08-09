@@ -302,36 +302,6 @@ hr {
   color: #454545;
 }
 
-.projects-left-dotted {
-  position: absolute;
-  bottom: 15%;
-  right:70%;
-  z-index: -1;
-}
-
-.projects-right-dotted {
-  position: absolute;
-  top: 15%;
-  left: 70%;
-  z-index: -1;
-}
-
-.top-dotted {
-  position: absolute;
-  right: 40%;
-  bottom: 70%;
-  z-index: -1;
-  transform: rotate(90deg);
-}
-
-.bottom-dotted {
-  position: absolute;
-  left: 40%;
-  top: 70%;
-  z-index: -1;
-  transform: rotate(90deg);
-}
-
 .number {
   color: gainsboro;
   font-size: 3rem;
@@ -350,7 +320,22 @@ hr {
   font-size: 0.9rem;
 }
 
-#beats-home {
+#first-image {
+  height: 450px;
+  width: 450px;
+}
+
+#second-image {
+  height: 450px;
+  width: 450px;
+}
+
+#third-image {
+  height: 500px;
+  width: 400px;
+}
+
+/* #beats-home {
   height: 400px;
   width: 600px;
   filter: grayscale(0.2); 
@@ -363,8 +348,8 @@ hr {
 
 #lemon-home {
   width: 400px;
-  filter: grayscale(0.3);
-}
+  filter: grayscale(0.2);
+} */
 
 /* Skills section */
 #skillset {
@@ -412,7 +397,7 @@ hr {
   background: #fcf8ec;
   border-radius: 3px;
   position: relative;
-  animation: fillBars 6s;
+  animation: fillBars 5s;
 }
 
 .skill-percentage::before {
@@ -653,30 +638,25 @@ ul li p img {
 
 /* All media queries */
 @media (max-width: 768px) {
-  .top-dotted {
-    visibility: hidden;
-  }
-  .bottom-dotted {
-    visibility: hidden;
-  }
   #second-project-image {
     transform: translateY(-25%);
   }
-  #beats-home {
+  #first-image {
+    height: 100%;
     width: 100%;
-    max-height: 280px;
   }
-  #lemon-home {
+  #second-image {
+    height: 100%;
     width: 100%;
-    max-width: 350px;
+  }
+  #third-image {
+    height: 100%;
+    width: 100%;
   }
   #lemon-prototype {
     padding: 10px;
     min-height: 200px;
     min-width: 320px;
-  }
-  #cuddlepaws {
-    margin-top: 20%;
   }
   #projects-heading {
     text-align: center;
@@ -708,30 +688,6 @@ ul li p img {
   }
   #third-project-text {
     transform: translateY(-5rem);
-  }
-  .top-dotted {
-    position: absolute;
-    right: 40%;
-    bottom: 70%;
-    z-index: -1;
-    transform: rotate(90deg);
-  }
-  .bottom-dotted {
-    position: absolute;
-    left: 35%;
-    top: 80%;
-    z-index: -1;
-    transform: rotate(90deg);
-  }
-  .projects-left-dotted {
-    position: absolute;
-    bottom: 20%;
-    right: 80%;
-  }
-  .projects-right-dotted {
-    position: absolute;
-    top: 20%;
-    left: 70%;
   }
   .lets-chat-box {
     font-size: 0.8rem;
