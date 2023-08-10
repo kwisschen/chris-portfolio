@@ -320,14 +320,31 @@ hr {
   font-size: 0.9rem;
 }
 
+#first-project-image {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 #first-image {
-  height: 450px;
+  height: auto;
   width: 450px;
+}
+
+#featured-background {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  width: 90%;
+  height: auto;
+  filter: grayscale(1.2);
+  z-index: -1;
 }
 
 #second-image {
   height: 450px;
   width: 450px;
+  min-width: 360px;
 }
 
 #third-image {

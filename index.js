@@ -95,7 +95,7 @@ $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#skillset");
   const animateElement = $(".skill-bar div");
-  const triggerPosition = targetElement.offset().top - $(window).height() + 200;
+  const triggerPosition = targetElement.offset().top - $(window).height() + 500;
 
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
