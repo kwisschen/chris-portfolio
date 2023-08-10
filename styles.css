@@ -344,7 +344,6 @@ hr {
 #second-image {
   height: 450px;
   width: 450px;
-  min-width: 360px;
 }
 
 #third-image {
@@ -654,7 +653,7 @@ ul li p img {
 /* All media queries */
 @media (max-width: 768px) {
   #second-project-image {
-    transform: translateY(-25%);
+    transform: translateY(-30%);
   }
   #first-image {
     height: 100%;
