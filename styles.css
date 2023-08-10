@@ -333,9 +333,9 @@ hr {
 
 #featured-background {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   left: 15%;
-  width: 90%;
+  width: 85%;
   height: auto;
   filter: grayscale(1.2);
   z-index: -1;
