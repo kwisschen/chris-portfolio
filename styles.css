@@ -335,22 +335,6 @@ hr {
   width: 400px;
 }
 
-/* #beats-home {
-  height: 400px;
-  width: 600px;
-  filter: grayscale(0.2); 
-}
-
-#auction-component {
-  width: 500px;
-  filter: grayscale(0.3);
-}
-
-#lemon-home {
-  width: 400px;
-  filter: grayscale(0.2);
-} */
-
 /* Skills section */
 #skillset {
   width: 100vw;
@@ -453,6 +437,20 @@ hr {
   transform: translateY(100%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#contact-box {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5rem;
+}
+
+.rule {
+  margin-top: 6rem;
+}
+
+#copyright {
+  padding-bottom: 2rem;
 }
 
 /* PROFILE PAGE */
@@ -706,11 +704,8 @@ ul li p img {
   .footer p {
     text-align: justify;
   }
-  #contact-box {
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 50px;
-    bottom: 0;
+  #copyright {
+    font-size: 0.8rem;
   }
   .companies {
     transform: scale(0.7);
@@ -719,17 +714,5 @@ ul li p img {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-
-@media (min-width: 769px) {
-  #contact-box {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 3rem;
-  }
-  hr.mb-2 {
-    margin-top: 10%;
   }
 }

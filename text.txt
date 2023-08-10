@@ -1,0 +1,18 @@
+Home:
+<p class="small-text">I love exploring new ideas and enjoy optimizing existing projects. I have a detail-oriented mindset and a keen eye for trendy styles, but always find myself gravitating toward the simplicit nature of good designs.
+</p>
+
+Profile:
+<p class="small-text">As a part-time student at Harvard Extension School (Harvard College's nighttime counterpart for working professionals), I tend to balance an extra 30 hours/week studying CS on top of my full-time job.
+I also have tons of fun broadening my skills and perception via other asynchronous tech courses.
+</p>
+
+Projects:
+<p class="small-text">The continuous integration of theory and practice is a method of learning I routinely abide by and most recommend for fellow lifelong learners.
+Having worked among engineers throughout my entire career, building real-world applications will ever be an integral part of my pursuit of happiness.
+</p>
+
+Contact:
+<p class="small-text">Nothing is more rewarding than connecting with like-minded talents and making a positive impact together.
+Every individual we meet provides new inspiration for personal growth. Reach out, and let me become a small part of <span>your</span> remarkable journey.
+</p>
