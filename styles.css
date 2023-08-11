@@ -194,18 +194,15 @@ hr {
 
 .explore-me a {
   color: #454545;
-}
-
-.explore-me img {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .explore-me #home-explore::after {
   content: "";
   position: absolute;
   top: 55%;
-  right: -100%;
-  width: 90%;
+  right: -60%;
+  width: 60%;
   height: 0.5px;
   background-color: #454545;
   transform: translateY(-50%);
@@ -397,7 +394,7 @@ hr {
   background: #fcf8ec;
   border-radius: 3px;
   position: relative;
-  animation: fillBars 5s;
+  animation: fillBars 6s;
 }
 
 .skill-percentage::before {
@@ -573,6 +570,10 @@ li {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.project-image {
+  border: 0.5px solid #000;
 }
 
 /* CONTACTS PAGE */
