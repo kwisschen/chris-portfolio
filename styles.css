@@ -295,7 +295,27 @@ hr {
   background-color: #79a3b1;
 }
 
-.projects-text {
+.project-image {
+  border: 0.5px solid #000;
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+  max-height: 800px;
+  margin: 0 auto;
+}
+
+#featured-background {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  width: 85%;
+  height: auto;
+  max-width: 450px;
+  filter: grayscale(1.2);
+  z-index: -1;
+}
+
+.box-text {
   color: #454545;
 }
 
@@ -315,37 +335,6 @@ hr {
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-}
-
-#first-project-image {
-  width: 100%;
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-#first-image {
-  height: auto;
-  width: 450px;
-}
-
-#featured-background {
-  position: absolute;
-  bottom: 20%;
-  left: 15%;
-  width: 85%;
-  height: auto;
-  filter: grayscale(1.2);
-  z-index: -1;
-}
-
-#second-image {
-  height: 450px;
-  width: 450px;
-}
-
-#third-image {
-  height: 500px;
-  width: 400px;
 }
 
 /* Skills section */
@@ -569,11 +558,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-}
-
-.project-image {
-  border: 0.5px solid #000;
+  margin: 0 auto;
 }
 
 /* CONTACTS PAGE */
@@ -640,8 +625,8 @@ ul li p img {
     background: #79a3b1;
     font-weight: bold;
   }
-  .projects-text:hover,
-  .projects-text:active {
+  .box-text:hover,
+  .box-text:active {
     color: #fcf8ec;
   }
   .item-box:hover,
@@ -653,26 +638,6 @@ ul li p img {
 
 /* All media queries */
 @media (max-width: 768px) {
-  #second-project-image {
-    transform: translateY(-30%);
-  }
-  #first-image {
-    height: 100%;
-    width: 100%;
-  }
-  #second-image {
-    height: 100%;
-    width: 100%;
-  }
-  #third-image {
-    height: 100%;
-    width: 100%;
-  }
-  #lemon-prototype {
-    padding: 10px;
-    min-height: 200px;
-    min-width: 320px;
-  }
   #projects-heading {
     text-align: center;
     margin: auto;
@@ -682,6 +647,9 @@ ul li p img {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+  #second-sample-image {
+    transform: translateY(-25%);
   }
   .flex-center {
     position: relative;
@@ -695,13 +663,7 @@ ul li p img {
     align-items: center;
     margin: auto;
   }
-  #first-project-text {
-    transform: translateY(-5rem);
-  }
-  #second-project-text {
-    transform: translateY(-5rem);
-  }
-  #third-project-text {
+  .project-text {
     transform: translateY(-5rem);
   }
   .lets-chat-box {
@@ -726,10 +688,5 @@ ul li p img {
   }
   .companies {
     transform: scale(0.7);
-  }
-  .project-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
