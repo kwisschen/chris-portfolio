@@ -58,6 +58,11 @@ nav .container-fluid {
   filter: grayscale(0.5);
 }
 
+.navbar-collapse {
+  padding-bottom: 1rem;
+  transition: height 0.2s ease; /* Adjust the transition duration */
+}
+
 .scrolled {
   opacity: 0.9;
 }
@@ -442,8 +447,7 @@ hr {
 }
 
 #contact-box {
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   margin-top: 5rem;
 }
 
@@ -601,14 +605,19 @@ ul li p img {
 
 /* All hovers */
 @media (hover: hover) or (active: active) or (any-pointer: coarse) or (any-pointer: fine) {
+  .navbar-icons ul li:hover {
+    transform: scale(1.2);
+  }
   .centered-box:hover,
   .centered-box:active {
     background: #79a3b1;
     font-weight: bold;
+    transform: scale(1.1);
   }
   .lets-chat-box:hover,
   .lets-chat-box:active {
     background: #456268;
+    transform: scale(1.1);
   }
   .lets-chat-box:hover #lets-chat-text,
   .lets-chat-box:active #lets-chat-text {
@@ -633,6 +642,10 @@ ul li p img {
   .item-box:active {
     background: #79a3b1;
     font-weight: bold;
+    transform: scale(1.1);
+  }
+  .contact-list ul li:hover {
+    transform: scale(1.1)
   }
 }
 
@@ -643,10 +656,7 @@ ul li p img {
     margin: auto;
   }
   #all-projects {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
   }
   #second-sample-image {
     transform: translateY(-25%);
@@ -671,11 +681,13 @@ ul li p img {
     height: 3rem;
     width: 10rem;
     bottom: 1rem;
-    left: 30%;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #hero-box {
+    left: 30%;
   }
   .typewriter h1 {
     animation: typewriter 1s steps(32) 0.5s forwards;

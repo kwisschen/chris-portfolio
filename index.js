@@ -1,19 +1,35 @@
 $(document).ready(function() {
-    var navbar = $(".navbar-collapse");
-    var toggleButton = $(".navbar-toggler");
-    $(document).on("click", function(event) {
-      // Check if the clicked element is not within the navbar and the navbar is open
-      if (!navbar.is(event.target) && navbar.hasClass("show") && !toggleButton.is(event.target)) {
-        toggleButton.trigger("click"); // Close the navbar
-      }
-    });
-    $(window).on("scroll", function() {
-        if (navbar.hasClass("show")) {
-            toggleButton.trigger("click");
-            toggleButton.blur();
-        }
-    });
+  var navbar = $(".navbar-collapse");
+  var toggleButton = $(".navbar-toggler");
+
+  toggleButton.on("click", function() {
+    if (navbar.hasClass("show")) {
+      toggleButton.hide();
+    }
   });
+
+  $(document).on("click", function(event) {
+    if (!navbar.is(event.target) && navbar.hasClass("show") && !toggleButton.is(event.target)) {
+      toggleButton.trigger("click");
+    }
+  });
+
+  $(window).on("scroll", function() {
+    if (navbar.hasClass("show")) {
+      toggleButton.trigger("click");
+      toggleButton.blur();
+    }
+  });
+
+  navbar.on("hidden.bs.collapse", function() {
+    toggleButton.show();
+  });
+
+  navbar.on("show.bs.collapse", function() {
+    toggleButton.hide();
+  });
+});
+
 // Vanilla JavaScript version
 // document.addEventListener("DOMContentLoaded", function() {
 //     const navbar = document.querySelector(".navbar-collapse");
