@@ -24,11 +24,8 @@ $(document).ready(function() {
   navbar.on("hidden.bs.collapse", function() {
     toggleButton.show();
   });
-
-  navbar.on("show.bs.collapse", function() {
-    toggleButton.hide();
-  });
 });
+
 
 // Vanilla JavaScript version
 // document.addEventListener("DOMContentLoaded", function() {
