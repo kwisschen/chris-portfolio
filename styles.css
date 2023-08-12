@@ -637,6 +637,7 @@ ul li p img {
   .box-text:hover,
   .box-text:active {
     color: #fcf8ec;
+    font-weight: bold;
   }
   .item-box:hover,
   .item-box:active {
