@@ -15,8 +15,8 @@ font-family: 'Permanent Marker', cursive; */
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 /* Navbar section */
@@ -25,6 +25,7 @@ body {
   top: 0;
   padding: 0;
   width: 100%;
+  margin: 0 auto;
   z-index: 20;
 }
 
@@ -48,7 +49,7 @@ nav .container-fluid {
 }
 
 #navbarNav .active {
-  display: inline;
+  display: inline-block;
   background: linear-gradient(to left, transparent 50%, #d0e8f2 50%);
 }
 
@@ -145,6 +146,7 @@ hr {
   margin-left: -100px;
   z-index: -1;
 }
+
 
 .lets-chat-box {
   box-sizing: border-box;
@@ -287,20 +289,21 @@ hr {
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.blue-heading {
-  font-family: "Montserrat", sans-serif;
-  color: #79a3b1;
-}
-
 #all-projects {
   background: none;
+  margin-top: 10px;
+  transform: translateX(70%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  transform: translateX(100%);
 }
 
 #all-projects:hover::before {
   background-color: #79a3b1;
+}
+
+.blue-heading {
+  font-family: "Montserrat", sans-serif;
+  color: #79a3b1;
 }
 
 .project-image {
@@ -323,10 +326,6 @@ hr {
   z-index: -1;
 }
 
-.box-text {
-  color: #454545;
-}
-
 .number {
   color: gainsboro;
   font-size: 3rem;
@@ -336,7 +335,6 @@ hr {
 .item-box {
   border: 0.5px solid #456268;
   margin-top: 5%;
-  margin-left: 0;
   height: 3rem;
   width: 6rem;
   display: flex;
@@ -364,7 +362,7 @@ hr {
   width: 100%;
   max-width: 600px;
   padding: 0 20px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .skill-name {
