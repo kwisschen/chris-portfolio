@@ -52,22 +52,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#intro").css({
-    transform: 'translateX(0)',
-    opacity: 1
-  });
-});
-
-$(document).ready(function() {
-  $("#contact-heading").css({
-    transform: 'translateY(0)',
-    opacity: 1
-  });
-  $("#background-pic").hide().fadeIn("slow");
-});
-
-
-$(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#hero-text .explore-me");
   const triggerPosition = targetElement.offset().top - $(window).height();
@@ -87,15 +71,19 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   let animationTriggered = false;
-  const targetElement = $("#projects-heading");
-  const triggerPosition = targetElement.offset().top - $(window).height() + 200;
-
+  const targetElement1 = $("#projects-heading");
+  const targetElement2 = $("#all-projects");
+  const triggerPosition = targetElement1.offset().top - $(window).height() + 250;
 
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
       setTimeout(function() {
-        targetElement.css({
-        transform: 'translateY(0)',
+        targetElement1.css({
+        transform: 'translateX(0)',
+        opacity: 1
+      });
+      targetElement2.css({
+        transform: 'translateX(0)',
         opacity: 1
       });
       }, 500)
@@ -134,4 +122,19 @@ $(document).ready(function() {
       animationTriggered = true;
     }
   });
+});
+
+$(document).ready(function() {
+  $("#intro").css({
+    transform: 'translateX(0)',
+    opacity: 1
+  });
+});
+
+$(document).ready(function() {
+  $("#contact-heading").css({
+    transform: 'translateY(0)',
+    opacity: 1
+  });
+  $("#background-pic").hide().fadeIn("slow");
 });

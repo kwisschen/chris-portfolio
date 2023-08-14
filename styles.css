@@ -202,7 +202,7 @@ hr {
   margin-right: 10px;
 }
 
-.explore-me #home-explore::after {
+#hero-text .explore-me::after {
   content: "";
   position: absolute;
   top: 55%;
@@ -282,7 +282,7 @@ hr {
 
 /* Projects section */
 #projects-heading {
-  transform: translateY(100%);
+  transform: translateX(-100%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -294,9 +294,12 @@ hr {
 
 #all-projects {
   background: none;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform: translateX(100%);
 }
 
-#all-projects::before {
+#all-projects:hover::before {
   background-color: #79a3b1;
 }
 
@@ -608,42 +611,40 @@ ul li p img {
   .navbar-icons ul li:hover {
     transform: scale(1.2);
   }
-  .centered-box:hover,
-  .centered-box:active {
-    background: #79a3b1;
-    font-weight: bold;
-    transform: scale(1.1);
-  }
   .lets-chat-box:hover,
   .lets-chat-box:active {
     background: #456268;
+    font-weight: bold;
     transform: scale(1.1);
-  }
-  .lets-chat-box:hover #lets-chat-text,
-  .lets-chat-box:active #lets-chat-text {
-    color: #fcf8ec;
-    font-weight: bold;
-  }
-  .explore-me a:hover,
-  .explore-me a:active {
-    color: #456268;
-    font-weight: bold;
-  }
-  #all-projects:hover,
-  #all-projects:active {
-    background: #79a3b1;
-    font-weight: bold;
-  }
-  .box-text:hover,
-  .box-text:active {
-    color: #fcf8ec;
-    font-weight: bold;
   }
   .item-box:hover,
   .item-box:active {
     background: #79a3b1;
     font-weight: bold;
-    transform: scale(1.1);
+    transform: scale(1.05);
+  }
+  .centered-box:hover,
+  .centered-box:active {
+    background: #79a3b1;
+    font-weight: bold;
+    transform: scale(1.05);
+  }
+  .lets-chat-box:hover #lets-chat-text,
+  .lets-chat-box:active #lets-chat-text {
+    color: #fcf8ec;
+  }
+  .item-box:hover #lets-chat-text,
+  .item-box:active #lets-chat-text {
+    color: #fcf8ec;
+  }
+  .centered-box:hover #lets-chat-text,
+  .centered-box:active #lets-chat-text {
+    color: #fcf8ec;
+  }
+  .explore-me a:hover,
+  .explore-me a:active {
+    color: #456268;
+    font-weight: bold;
   }
   .contact-list ul li:hover {
     transform: scale(1.05);
