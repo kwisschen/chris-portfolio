@@ -388,7 +388,7 @@ hr {
   background: #fcf8ec;
   border-radius: 3px;
   position: relative;
-  animation: fillBars 6s;
+  animation: fillBars 5s;
 }
 
 .skill-percentage::before {
