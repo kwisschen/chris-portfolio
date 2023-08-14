@@ -60,12 +60,11 @@ nav .container-fluid {
 }
 
 .navbar-collapse {
-  padding-bottom: 1rem;
   transition: height 0.2s ease; /* Adjust the transition duration */
 }
 
 .scrolled {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* Hero section */
@@ -606,6 +605,9 @@ ul li p img {
 
 /* All hovers */
 @media (hover: hover) or (active: active) or (any-pointer: coarse) or (any-pointer: fine) {
+  .nav-item:hover {
+    transform: scale(1.1);
+  }
   .navbar-icons ul li:hover {
     transform: scale(1.2);
   }
@@ -651,6 +653,12 @@ ul li p img {
 
 /* All media queries */
 @media (max-width: 768px) {
+  .nav-item:hover {
+    transform: scaleY(1.1);
+  }
+  .navbar-collapse {
+    padding-bottom: 1rem;
+  }
   #projects-heading {
     text-align: center;
     margin: auto;

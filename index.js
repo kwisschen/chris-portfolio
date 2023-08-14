@@ -1,26 +1,35 @@
 $(document).ready(function() {
-  var navbar = $(".navbar-collapse");
+  var navbar = $(".navbar");
+  var navbarCollapsed = $(".navbar-collapse");
   var toggleButton = $(".navbar-toggler");
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      navbar.addClass("scrolled");
+    } else {
+      navbar.removeClass("scrolled");
+    }
+  });
 
   toggleButton.on("click", function() {
     toggleButton.toggleClass("menu-open");
   });
 
   $(document).on("click", function(event) {
-    if (!navbar.is(event.target) && !toggleButton.is(event.target) && navbar.hasClass("show")) {
+    if (!navbarCollapsed.is(event.target) && !toggleButton.is(event.target) && navbarCollapsed.hasClass("show")) {
       toggleButton.trigger("click");
       toggleButton.blur();
     } 
   });
 
   $(window).on("scroll", function() {
-    if (navbar.hasClass("show")) {
+    if (navbarCollapsed.hasClass("show")) {
       toggleButton.trigger("click");
       toggleButton.blur();
     }
   });
 
-  navbar.on("hidden.bs.collapse", function() {
+  navbarCollapsed.on("hidden.bs.collapse", function() {
     toggleButton.removeClass("menu-open");
   });
 });
@@ -109,14 +118,3 @@ $(document).ready(function() {
   });
   $("#background-pic").hide().fadeIn("slow");
 });
-// Vanilla JavaScript version of navbar
-// document.addEventListener("DOMContentLoaded", function() {
-//     const navbar = document.querySelector(".navbar-collapse");
-//     const toggleButton = document.querySelector(".navbar-toggler");
-  
-//     document.body.addEventListener("click", function(event) {
-//       if (!navbar.contains(event.target) && navbar.classList.contains("show") && !toggleButton.contains(event.target)) {
-//         toggleButton.click();
-//       }
-//     });
-//   });
