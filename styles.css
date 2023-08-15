@@ -149,7 +149,7 @@ hr {
 
 .lets-chat-box {
   box-sizing: border-box;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #c0c0c0;
   background-color: #fcf8ec;
   font-size: 0.9rem;
   height: 4rem;
@@ -178,11 +178,11 @@ hr {
   transform: translateX(0);
 }
 
-#lets-chat-text {
+.button-text {
   color: #454545;
 }
 
-#lets-chat-text > img {
+.button-text > img {
   margin-right: 5px;
 }
 
@@ -306,7 +306,7 @@ hr {
 }
 
 .project-image {
-  border: 1px solid #dcdcdc;
+  border: 1px solid #c0c0c0;
   height: auto;
   width: 100%;
   max-width: 450px;
@@ -332,7 +332,7 @@ hr {
 }
 
 .item-box {
-  border: 1px solid #dcdcdc;
+  border: 1px solid #c0c0c0;
   margin-top: 5%;
   height: 3rem;
   width: 6rem;
@@ -554,7 +554,7 @@ li {
 
 /* PROJECTS PAGE */
 .centered-box {
-  border: 1px solid #dcdcdc;
+  border: 1px solid #c0c0c0;
   font-size: 0.9rem;
   width: 6rem;
   height: 3rem;
@@ -629,16 +629,16 @@ ul li p img {
     font-weight: bold;
     transform: scale(1.05);
   }
-  .lets-chat-box:hover #lets-chat-text,
-  .lets-chat-box:active #lets-chat-text {
+  .lets-chat-box:hover .button-text,
+  .lets-chat-box:active .button-text {
     color: #fcf8ec;
   }
-  .item-box:hover #lets-chat-text,
-  .item-box:active #lets-chat-text {
+  .item-box:hover .button-text,
+  .item-box:active .button-text {
     color: #fcf8ec;
   }
-  .centered-box:hover #lets-chat-text,
-  .centered-box:active #lets-chat-text {
+  .centered-box:hover .button-text,
+  .centered-box:active .button-text {
     color: #fcf8ec;
   }
   .explore-me a:hover,
