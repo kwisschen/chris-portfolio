@@ -341,7 +341,7 @@ hr {
   max-width: 450px;
   max-height: 800px;
   margin: 0 auto;
-  box-shadow: 2px 2px 2px #000;
+  box-shadow: 1px 1px 1px #000;
 }
 
 #featured-background {
@@ -353,7 +353,7 @@ hr {
   max-width: 450px;
   filter: grayscale(1.2);
   z-index: -1;
-  box-shadow: 2px 2px 2px #000;
+  box-shadow: 1px 1px 1px #000;
 }
 
 .number {
