@@ -342,7 +342,6 @@ hr {
   max-height: 800px;
   margin: 0 auto;
   box-shadow: 2px 2px 2px #000;
-
 }
 
 #featured-background {
@@ -597,6 +596,7 @@ li {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  box-shadow: 1px 1px 1px #000;
 }
 
 /* CONTACTS PAGE */
