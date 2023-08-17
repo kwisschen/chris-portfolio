@@ -66,7 +66,7 @@ nav .container-fluid {
 }
 
 .navbar-toggler {
-  box-shadow: 0 0 4px #000;
+  box-shadow: 0 0 2px #000;
   border: none;
 }
 
@@ -371,7 +371,6 @@ hr {
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  box-shadow: 1px 1px 1px #000;
 }
 
 /* Skills section */
@@ -596,7 +595,6 @@ li {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 1px 1px 1px #000;
 }
 
 /* CONTACTS PAGE */
