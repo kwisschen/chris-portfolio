@@ -152,6 +152,11 @@ hr {
   z-index: 1;
 }
 
+#profile-pic {
+  filter: grayscale(0.3);
+  border-radius: 10%;
+}
+
 .hero-left-dotted {
   position: absolute;
   top: 4rem;
@@ -629,7 +634,10 @@ ul li p img {
 #background-pic {
   max-width: 100%;
   display: block;
-  box-shadow: 2px 2px 2px #000;
+}
+
+#workspace-pic {
+  box-shadow: 10px 10px 20px #000;
 }
 
 #background-pic {
