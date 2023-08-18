@@ -767,4 +767,7 @@ ul li p img {
   .companies {
     transform: scale(0.7);
   }
+  .carousel-inner {
+    box-shadow: 2px 2px 5px #000;
+  }
 }
