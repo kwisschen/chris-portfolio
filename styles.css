@@ -153,8 +153,8 @@ hr {
 }
 
 #profile-pic {
-  filter: grayscale(0.2);
-  border-radius: 10%;
+  filter: grayscale(0.1);
+  border-radius: 5%;
 }
 
 .hero-left-dotted {
