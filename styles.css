@@ -150,6 +150,7 @@ hr {
   bottom: 5rem;
   right: 80%;
   z-index: 1;
+  border-radius: 50%;
 }
 
 #profile-pic {
@@ -186,7 +187,7 @@ hr {
   position: relative;
   transition: all 0.4s;
   overflow: hidden;
-  box-shadow: 1px 1px 1px #000;
+  box-shadow: 2px 2px 3px #000;
 }
 
 .lets-chat-box::before {
@@ -345,8 +346,8 @@ hr {
   max-width: 450px;
   max-height: 800px;
   margin: 0 auto;
-  box-shadow: 1px 1px 1px #000;
-  border-radius: 10%;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 5%;
 }
 
 #featured-background {
@@ -358,8 +359,7 @@ hr {
   max-width: 450px;
   filter: grayscale(1.2);
   z-index: -1;
-  box-shadow: 1px 1px 1px #000;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .number {
@@ -469,6 +469,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#skills-button {
+  border: 1px solid grey;
 }
 
 /* Footer section */
