@@ -66,7 +66,6 @@ nav .container-fluid {
 }
 
 .navbar-toggler {
-  box-shadow: 0 0 2px #000;
   border: none;
 }
 
@@ -204,6 +203,7 @@ hr {
 
 .button-text {
   color: #454545;
+  text-shadow: 1px 1px 1px #c0c0c0;
 }
 
 .button-text > img {
@@ -492,7 +492,6 @@ hr {
 }
 
 /* PROFILE PAGE */
-
 #intro {
   transform: translateX(-100%);
   opacity: 0;
@@ -654,6 +653,10 @@ ul li p img {
     background: #456268;
     font-weight: bold;
     transform: scale(1.1);
+    border: 1px solid #456268;
+  }
+  .lets-chat-box:hover img {
+    filter: brightness(0) invert(1);
   }
   .item-box:hover,
   .item-box:active {
@@ -670,14 +673,17 @@ ul li p img {
   .lets-chat-box:hover .button-text,
   .lets-chat-box:active .button-text {
     color: #fcf8ec;
+    text-shadow: 1px 1px 1px #000;
   }
   .item-box:hover .button-text,
   .item-box:active .button-text {
     color: #fcf8ec;
+    text-shadow: 1px 1px 1px #000;
   }
   .centered-box:hover .button-text,
   .centered-box:active .button-text {
     color: #fcf8ec;
+    text-shadow: 1px 1px 1px #000;
   }
   .explore-me a:hover,
   .explore-me a:active {
