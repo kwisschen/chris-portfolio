@@ -347,6 +347,7 @@ hr {
   max-height: 800px;
   margin: 0 auto;
   box-shadow: 1px 1px 1px #000;
+  border-radius: 10%;
 }
 
 #featured-background {
@@ -359,6 +360,7 @@ hr {
   filter: grayscale(1.2);
   z-index: -1;
   box-shadow: 1px 1px 1px #000;
+  border-radius: 10%;
 }
 
 .number {
@@ -634,6 +636,7 @@ ul li p img {
 #background-pic {
   max-width: 100%;
   display: block;
+  border-radius: 10%;
 }
 
 #workspace-pic {
