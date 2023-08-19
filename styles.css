@@ -27,6 +27,7 @@ body {
   width: 100%;
   margin: 0 auto;
   z-index: 20;
+  opacity: 0.95;
 }
 
 nav .container-fluid {
@@ -73,12 +74,8 @@ nav .container-fluid {
   opacity: 0.7;
 }
 
-.navbar-toggler:hover {
-  transform: scale(1.05);
-}
-
 .scrolled {
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
 /* Hero section */
@@ -152,7 +149,7 @@ hr {
   border-radius: 5%;
 }
 
-.hero-left-dotted {
+#hero-left-dotted {
   position: absolute;
   top: 4rem;
   right: 100%;
@@ -160,14 +157,13 @@ hr {
   z-index: -1;
 }
 
-.hero-right-dotted {
+#hero-right-dotted {
   position: absolute;
   bottom: 4rem;
   left: 100%;
   margin-left: -100px;
   z-index: -1;
 }
-
 
 .lets-chat-box {
   box-sizing: border-box;
@@ -483,6 +479,7 @@ hr {
 #contact-box {
   margin: 0 auto;
   margin-top: 5rem;
+  position: relative;
 }
 
 .rule {
@@ -536,7 +533,7 @@ hr {
   }
 }
 
-#chris-pic {
+#my-pic {
   border-radius: 50%;
   margin: 1rem auto;
 }
@@ -657,6 +654,9 @@ ul li p img {
 @media (hover: hover) or (active: active) or (any-pointer: coarse) or (any-pointer: fine) {
   .nav-item:hover {
     transform: scale(1.1);
+  }
+  .navbar-toggler:hover {
+    transform: scale(1.05);
   }
   .navbar-icons ul li:hover {
     transform: scale(1.2);
