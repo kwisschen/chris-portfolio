@@ -106,24 +106,28 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("#intro").css({
-    transform: 'translateX(0)',
-    opacity: 1,
-  });
+  setTimeout(function() {
+    $("#intro").css({
+      transform: 'translateX(0)',
+      opacity: 1,
+    });
+  }, 200)
 });
 
 $(document).ready(function() {
-  $("#contact-heading").css({
-    transform: 'translateY(0)',
-    opacity: 1,
-  });
   $("#background-pic").css({
     opacity: 0,
   });
+  setTimeout(function() {
+    $("#contact-heading").css({
+      transform: 'translateY(0)',
+      opacity: 1,
+    });
+  }, 300)
   setTimeout(function() {
     $("#background-pic").css({
       opacity: 1,
     });
     $("#background-pic").hide().fadeIn("slow");
-  }, 500);
+  }, 900);
 });
