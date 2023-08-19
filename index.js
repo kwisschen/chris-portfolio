@@ -44,9 +44,9 @@ $(document).ready(function() {
       setTimeout(function() {
         targetElement.css({
         transform: 'translateX(0)',
-        opacity: 1
+        opacity: 1,
       });
-      }, 500)
+      }, 300)
       animationTriggered = true;
     }
   });
@@ -69,7 +69,7 @@ $(document).ready(function() {
         transform: 'translateX(0)',
         opacity: 1,
       });
-      }, 500)
+      }, 300)
       animationTriggered = true;
     }
   });
@@ -97,9 +97,9 @@ $(document).ready(function() {
       setTimeout(function() {
         targetElement.css({
           transform: 'translateY(0)',
-          opacity: 1
+          opacity: 1,
         });
-      }, 500)
+      }, 500);
       animationTriggered = true;
     }
   });
@@ -108,14 +108,22 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#intro").css({
     transform: 'translateX(0)',
-    opacity: 1
+    opacity: 1,
   });
 });
 
 $(document).ready(function() {
   $("#contact-heading").css({
     transform: 'translateY(0)',
-    opacity: 1
+    opacity: 1,
   });
-  $("#background-pic").hide().fadeIn("slow");
+  $("#background-pic").css({
+    opacity: 0,
+  });
+  setTimeout(function() {
+    $("#background-pic").css({
+      opacity: 1,
+    });
+    $("#background-pic").hide().fadeIn("slow");
+  }, 500);
 });
