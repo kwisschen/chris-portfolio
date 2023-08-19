@@ -2,6 +2,7 @@ $(document).ready(function() {
   var navbar = $(".navbar");
   var navbarCollapsed = $(".navbar-collapse");
   var toggleButton = $(".navbar-toggler");
+  var toggleIcon = $(".navbar-toggler-icon");
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
@@ -12,7 +13,7 @@ $(document).ready(function() {
   });
 
   toggleButton.on("click", function() {
-    toggleButton.toggleClass("menu-open");
+    toggleIcon.toggleClass("menu-open");
   });
 
   $(document).on("click", function(event) {
@@ -30,7 +31,7 @@ $(document).ready(function() {
   });
 
   navbarCollapsed.on("hidden.bs.collapse", function() {
-    toggleButton.removeClass("menu-open");
+    toggleIcon.removeClass("menu-open");
   });
 });
 

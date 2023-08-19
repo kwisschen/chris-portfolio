@@ -69,6 +69,10 @@ nav .container-fluid {
   border: none;
 }
 
+.menu-open {
+  opacity: 0.7;
+}
+
 .navbar-toggler:hover {
   transform: scale(1.05);
 }
@@ -707,7 +711,7 @@ ul li p img {
 /* All media queries */
 @media (max-width: 768px) {
   .nav-item:hover {
-    transform: scaleY(1.1);
+    transform: scaleY(1.15);
   }
   .navbar-collapse {
     padding-bottom: 1rem;
@@ -764,5 +768,10 @@ ul li p img {
   }
   .carousel-inner {
     box-shadow: 2px 2px 5px #000;
+  }
+}
+@media (max-width: 992px){
+  .nav-item:hover {
+    transform: scaleY(1.15);
   }
 }
