@@ -82,6 +82,12 @@ h1 {
   font-family: "Playfair Display", serif;
 }
 
+h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #c0c0c0;
+}
+
 h1 span {
   font-family: "Playfair Display", serif;
   text-shadow: 1px 1px 2px #c0c0c0;
@@ -93,18 +99,6 @@ span {
 
 em {
   font-family: "Playfair Display", serif;
-}
-
-h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  text-shadow: 1px 1px 2px #c0c0c0;
-}
-
-h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  text-shadow: 1px 1px 2px #c0c0c0;
 }
 
 a {
@@ -130,10 +124,6 @@ hr {
   font-size: 1.5rem;
   background: linear-gradient(to bottom, transparent 60%, #d0e8f2 40%);
   display: inline;
-  text-shadow: 1px 1px 2px #c0c0c0;
-}
-
-.lead.contacts {
   text-shadow: 1px 1px 2px #c0c0c0;
 }
 
@@ -187,7 +177,7 @@ hr {
   position: relative;
   transition: all 0.4s;
   overflow: hidden;
-  box-shadow: 2px 2px 3px #000;
+  box-shadow: 2px 2px 5px #000;
 }
 
 .lets-chat-box::before {
@@ -222,14 +212,11 @@ hr {
   font-size: 1rem;
 }
 
-#explore {
-  text-shadow: 1px 1px 2px #c0c0c0;
-}
-
 #hero-text .explore-me {
   transform: translateX(100%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  text-shadow: 1px 1px 2px #c0c0c0;
 }
 
 .explore-me a {
@@ -377,6 +364,7 @@ hr {
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
+  box-shadow: 2px 2px 5px #000;
 }
 
 /* Skills section */
@@ -402,7 +390,7 @@ hr {
 }
 
 .skill-name {
-  font-size: 18px;
+  font-size: 1.15rem;
   font-weight: 700;
   padding-bottom: 12px;
   color: #456268;
@@ -437,7 +425,7 @@ hr {
   color: #fcf8ec;
   opacity: 0.8;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 0.65rem;
   top: -35px;
   right: 0;
   transform: transition(50%);
@@ -527,7 +515,7 @@ hr {
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  font-size: 36px;
+  font-size: 2.2rem;
   font-weight: 700;
   opacity: 0;
   animation: typewriter 2.5s steps(48) 0.5s forwards;
@@ -582,6 +570,11 @@ li {
   z-index: 1;
 }
 
+.cert-image {
+  display: block;
+  width: 100%;
+}
+
 .carousel-item img {
   max-height: 600px;
   object-fit: contain;
@@ -604,6 +597,7 @@ li {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  box-shadow: 2px 2px 5px #000;
 }
 
 /* CONTACTS PAGE */
@@ -615,16 +609,17 @@ li {
   text-shadow: 1px 1px 2px #c0c0c0;
 }
 
-#contact-heading + .lead {
+.lead.contacts {
   text-shadow: 1px 1px 2px #c0c0c0;
-}
-
-.contact-list ul li p {
-  font-size: 20px;
+  font-size: 1.4rem;
 }
 
 .contact-list ul li {
   margin: 2rem auto;
+}
+
+.contact-list ul li p {
+  font-size: 1.2rem;
 }
 
 ul li p img {
