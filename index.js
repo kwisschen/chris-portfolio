@@ -54,7 +54,30 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   let animationTriggered = false;
-  const targetElement = $("#first-sample-image, #featured-background");
+  const targetElement1 = $("#projects-heading");
+  const targetElement2 = $("#all-projects");
+  const triggerPosition = targetElement1.offset().top - $(window).height() + 250;
+
+  $(window).scroll(function() {
+    if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
+      setTimeout(function() {
+        targetElement1.css({
+        transform: 'translateX(0)',
+        opacity: 1,
+      });
+      targetElement2.css({
+        transform: 'translateX(0)',
+        opacity: 1,
+      });
+      }, 300)
+      animationTriggered = true;
+    }
+  });
+});
+
+$(document).ready(function() {
+  let animationTriggered = false;
+  const targetElement = $("#first-sample-image");
   const triggerPosition = targetElement.offset().top - $(window).height();
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
@@ -72,7 +95,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#second-sample-image");
-  const triggerPosition = targetElement.offset().top - $(window).height();
+  const triggerPosition = targetElement.offset().top - $(window).height() + 100;
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
       setTimeout(function() {
@@ -89,34 +112,11 @@ $(document).ready(function() {
 $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#third-sample-image");
-  const triggerPosition = targetElement.offset().top - $(window).height();
+  const triggerPosition = targetElement.offset().top - $(window).height() + 200;
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
       setTimeout(function() {
         targetElement.css({
-        transform: 'translateX(0)',
-        opacity: 1,
-      });
-      }, 300)
-      animationTriggered = true;
-    }
-  });
-});
-
-$(document).ready(function() {
-  let animationTriggered = false;
-  const targetElement1 = $("#projects-heading");
-  const targetElement2 = $("#all-projects");
-  const triggerPosition = targetElement1.offset().top - $(window).height() + 250;
-
-  $(window).scroll(function() {
-    if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
-      setTimeout(function() {
-        targetElement1.css({
-        transform: 'translateX(0)',
-        opacity: 1,
-      });
-      targetElement2.css({
         transform: 'translateX(0)',
         opacity: 1,
       });

@@ -338,13 +338,13 @@ hr {
 }
 
 #first-sample-image, #third-sample-image {
-  transform: translateX(-100%);
+  transform: translateX(-30%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 #second-sample-image {
-  transform: translateX(100%);
+  transform: translateX(-30%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
@@ -359,9 +359,6 @@ hr {
   filter: grayscale(1.2);
   z-index: -1;
   border-radius: 5%;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .number {
@@ -740,6 +737,7 @@ ul li p img {
   }
   #second-sample-image {
     transform: translateY(-25%);
+    transform: translateX(-30%);
   }
   .flex-center {
     position: relative;
