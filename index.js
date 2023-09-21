@@ -20,7 +20,7 @@ $(document).ready(function() {
     if (!navbarCollapsed.is(event.target) && !toggleButton.is(event.target) && navbarCollapsed.hasClass("show")) {
       toggleButton.trigger("click");
       toggleButton.blur();
-    } 
+    }
   });
 
   $(window).on("scroll", function() {
@@ -38,6 +38,57 @@ $(document).ready(function() {
 $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#hero-text .explore-me");
+  const triggerPosition = targetElement.offset().top - $(window).height();
+  $(window).scroll(function() {
+    if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
+      setTimeout(function() {
+        targetElement.css({
+        transform: 'translateX(0)',
+        opacity: 1,
+      });
+      }, 300)
+      animationTriggered = true;
+    }
+  });
+});
+
+$(document).ready(function() {
+  let animationTriggered = false;
+  const targetElement = $("#first-sample-image, #featured-background");
+  const triggerPosition = targetElement.offset().top - $(window).height();
+  $(window).scroll(function() {
+    if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
+      setTimeout(function() {
+        targetElement.css({
+        transform: 'translateX(0)',
+        opacity: 1,
+      });
+      }, 300)
+      animationTriggered = true;
+    }
+  });
+});
+
+$(document).ready(function() {
+  let animationTriggered = false;
+  const targetElement = $("#second-sample-image");
+  const triggerPosition = targetElement.offset().top - $(window).height();
+  $(window).scroll(function() {
+    if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {
+      setTimeout(function() {
+        targetElement.css({
+        transform: 'translateX(0)',
+        opacity: 1,
+      });
+      }, 300)
+      animationTriggered = true;
+    }
+  });
+});
+
+$(document).ready(function() {
+  let animationTriggered = false;
+  const targetElement = $("#third-sample-image");
   const triggerPosition = targetElement.offset().top - $(window).height();
   $(window).scroll(function() {
     if (!animationTriggered && $(this).scrollTop() >= triggerPosition) {

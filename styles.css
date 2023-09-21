@@ -333,8 +333,20 @@ hr {
   max-width: 450px;
   max-height: 800px;
   margin: 0 auto;
-  box-shadow: 2px 2px 5px #000;
+  box-shadow: 5px 5px 10px #000;
   border-radius: 5%;
+}
+
+#first-sample-image, #third-sample-image {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#second-sample-image {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 #featured-background {
@@ -347,6 +359,9 @@ hr {
   filter: grayscale(1.2);
   z-index: -1;
   border-radius: 5%;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .number {
