@@ -35,6 +35,9 @@ $(document).ready(function() {
   });
 });
 
+const currentYear = new Date().getFullYear();
+$("#copyright-year").text(currentYear);
+
 $(document).ready(function() {
   let animationTriggered = false;
   const targetElement = $("#hero-text .explore-me");

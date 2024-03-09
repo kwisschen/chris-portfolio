@@ -15,234 +15,240 @@
 </head>
 <body>
   <!-- Navbar -->
-  <section>
-    <nav class="navbar navbar-expand-lg navbar-container">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Chris C.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item mx-2">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link active" href="./profile.html">Profile</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="./projects.html">Projects</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="./contact.html">Contact Me</a>
-            </li>
-          </ul>
+  <header>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Chris C.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" href="./profile.html">Profile</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./projects.html">Projects</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-flex navbar-icons">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="https://www.linkedin.com/in/kwisschen"><img src="./assets/images/linkedin.png" alt="linkedin logo" height="24"></a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="https://instagram.com/kwisschen?igshid=OGQ5ZDc2ODk2ZA=="><img src="./assets/images/instagram.png" alt="instagram logo" height="24"></a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="https://chat.whatsapp.com/GctdSSZzub61yqiq6zwSIH"><img src="./assets/images/whatsapp.png" alt="whatsapp logo" height="24"></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="d-none d-lg-flex navbar-icons">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="https://www.linkedin.com/in/kwisschen"><img src="./assets/images/linkedin.png" alt="linkedin logo" height="24"></a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="https://instagram.com/kwisschen?igshid=OGQ5ZDc2ODk2ZA=="><img src="./assets/images/instagram.png" alt="instagram logo" height="24"></a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link" href="https://chat.whatsapp.com/GctdSSZzub61yqiq6zwSIH"><img src="./assets/images/whatsapp.png" alt="whatsapp logo" height="24"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </section>
+      </nav>
+    </section>
+  </header>
 
   <!-- Intro -->
-  <section id="intro">
-    <div class="container col-xxl-8 px-5 py-2 pt-3">
-      <div class="profile-container pt-5">
-        <div class="typewriter pt-5">
-          <h1><span>Christopher Chen</span></h1>
-          <div class="d-flex justify-content-center">
-            <img id="my-pic" src="./assets/images/chris-profile.jpeg" alt="chris lifestyle pic" height="140" loading="eager">
-          </div>
-          <p class="lead">Web Developer | Patent Engineer</p>
-          <div class="summary d-flex justify-content-center">
-            <p>Detailed perfectionist, learning aficionado, gaming connoisseur, integrated experience in innovative and creative services, native in both English and Chinese.        
-            </p>
+  <main>
+    <section id="intro">
+      <div class="container col-xxl-8 px-5 py-2 pt-3">
+        <div class="profile-container pt-5">
+          <div class="typewriter pt-5">
+            <h1><span>Christopher Chen</span></h1>
+            <div class="d-flex justify-content-center">
+              <img id="my-pic" src="./assets/images/chris-profile.jpeg" alt="chris lifestyle pic" height="140" loading="eager">
+            </div>
+            <p class="lead">Web Developer | Patent Engineer</p>
+            <div class="summary d-flex justify-content-center">
+              <p>Detailed perfectionist, learning aficionado, gaming connoisseur, integrated experience in innovative and creative services, native in both English and Chinese.        
+              </p>
+            </div>
           </div>
         </div>
+    </section>
+    <hr />
+
+    <!-- Education -->
+    <section>
+      <div class="container text-center col-xxl-8 px-5 py-3">
+        <h3 class="pb-3">Education</h3>
+        <ul class="py-2 me-4">
+          <li class="lead pt-3">Harvard University, Extension School<br /><small>Cambridge MA, USA</small></li>
+          <li>Master's degree program<br /><span>Computer Science</span><br />Jan 2023 - May <span>2025</span></li>
+        </ul>
+        <ul class="py-2 me-4">
+          <li class="lead pt-3">Ming Chuan University<br /><small>Taipei, Taiwan</small></li>
+          <li>Master's degree<br /><span>Applied English</span><br />Jun 2016</li>
+        </ul>
+        <ul class="py-2 me-4">
+          <li class="lead pt-3">National Taiwan University<br /><small>Taipei, Taiwan</small></li>
+          <li>Bachelor's degree<br /><span>Foreign Languages and Literatures</span><br />Jun 2008</li>
+        </ul>      
       </div>
-  </section>
-  <hr />
+    </section>
+    <hr />
 
-  <!-- Education -->
-  <section>
-    <div class="container text-center col-xxl-8 px-5 py-3">
-      <h3 class="pb-3">Education</h3>
-      <ul class="py-2 me-4">
-        <li class="lead pt-3">Harvard University, Extension School<br /><small>Cambridge MA, USA</small></li>
-        <li>Master's degree program<br /><span>Computer Science</span><br />Jan 2023 - May <span>2025</span></li>
-      </ul>
-      <ul class="py-2 me-4">
-        <li class="lead pt-3">Ming Chuan University<br /><small>Taipei, Taiwan</small></li>
-        <li>Master's degree<br /><span>Applied English</span><br />Jun 2016</li>
-      </ul>
-      <ul class="py-2 me-4">
-        <li class="lead pt-3">National Taiwan University<br /><small>Taipei, Taiwan</small></li>
-        <li>Bachelor's degree<br /><span>Foreign Languages and Literatures</span><br />Jun 2008</li>
-      </ul>      
-    </div>
-  </section>
-  <hr />
+    <!-- Skills -->
+    <section>
+      <div class="container text-center col-xxl-8 px-5 py-3">
+        <h3 class="pb-3">Skills</h3> 
+        <ul class="py-2 me-4">
+          <li class="lead pt-3"><span>Front-End</span> Development</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>React.js</li>
+          <li>Figma</li>
+          <li>UI/UX Design</li>
+        </ul>
+        <ul class="py-2 me-4">
+          <li class="lead pt-3"><span>Back-End</span> Development</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Express.js</li>
+          <li>Django</li>
+          <li>Git/GitHub</li>
+          <li>Unix/Linux</li>
+        </ul> 
+        <ul class="py-2 me-4">
+          <li class="lead pt-3"><span>Content</span> Development</li>
+          <li>English</li>
+          <li>Chinese</li>
+          <li>Localization</li>
+          <li>Copywriting</li>
+          <li>Digital Marketing</li>
+          <li>Technical Writing/Translation</li>
+        </ul>  
+      </div>
+    </section>
+    <hr />
 
-  <!-- Skills -->
-  <section>
-    <div class="container text-center col-xxl-8 px-5 py-3">
-      <h3 class="pb-3">Skills</h3> 
-      <ul class="py-2 me-4">
-        <li class="lead pt-3"><span>Front-End</span> Development</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Bootstrap</li>
-        <li>jQuery</li>
-        <li>React.js</li>
-        <li>Figma</li>
-        <li>UI/UX Design</li>
-      </ul>
-      <ul class="py-2 me-4">
-        <li class="lead pt-3"><span>Back-End</span> Development</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Express.js</li>
-        <li>Django</li>
-        <li>Git/GitHub</li>
-        <li>Unix/Linux</li>
-      </ul> 
-      <ul class="py-2 me-4">
-        <li class="lead pt-3"><span>Content</span> Development</li>
-        <li>English</li>
-        <li>Chinese</li>
-        <li>Localization</li>
-        <li>Copywriting</li>
-        <li>Digital Marketing</li>
-        <li>Technical Writing/Translation</li>
-      </ul>  
-    </div>
-  </section>
-  <hr />
-
-  <!-- Experience -->
-  <section>
-    <div class="container col-xxl-8 px-5 py-3">
-      <h3 class="text-center pb-3">Experiences</h3>
-      <ul>
-        <li class="lead pt-3">Deputy Manager, Patents Department</li>
-        <li><span>Li & Cai Intellectual Property Office</span><br />Dec 2016 - present</li>
-          <ul class="job-description py-2">
-            <li>Work closely with engineering and sales teams to manage product deliverables by leveraging self-invented C.A.S.H. system (Coherency, Accuracy, Satisfaction, and Heuristics).
-            </li>
-            <li>Led digital transformation and AI integration initiatives for digitalization and automation of workflows.
-            </li>
-            <li>Created databases and style guides for streamlining cross-language terminology across six engineering fields.
-            </li>
-            <li>Scaled a new team from the ground up and significantly increased customer satisfaction of relevant products.
-            </li>
-            <li>Employee of the Year award - 2022.</li>
-          </ul>
-        <li class="lead pt-3">Technical Writer & Editor</li>
-        <li><span>Saint Island International Patent & Law Offices</span><br />Aug 2011 - Jul 2016</li>
-          <ul class="job-description py-2">
-              <li>Wrote, translated, and edited technical/non-technical documents for patent and trademark applications.
-              </li>
-              <li>Analyzed and drafted reports on USPTO Office Actions across diverse engineering fields.
-              </li>
-              <li>Designed and taught curriculum for training engineers in patent translation.
-              </li>
-          </ul>
-          <li class="lead pt-3">Intellectual Property Administrator</li>
-          <li><span>Sohare Information Co. Ltd.</span><br />Jul 2009 - Jun 2011</li>
+    <!-- Experience -->
+    <section>
+      <div class="container col-xxl-8 px-5 py-3">
+        <h3 class="text-center pb-3">Experiences</h3>
+        <ul>
+          <li class="lead pt-3">Deputy Manager, Patents Department</li>
+          <li><span>Li & Cai Intellectual Property Office</span><br />Dec 2016 - present</li>
             <ul class="job-description py-2">
-                <li>Contributed to design of company website and in-house software, managed IP portfolios therewith.
+              <li>Work closely with engineering and sales teams to manage product deliverables by leveraging self-invented C.A.S.H. system (Coherency, Accuracy, Satisfaction, and Heuristics).
+              </li>
+              <li>Led digital transformation and AI integration initiatives for digitalization and automation of workflows.
+              </li>
+              <li>Created databases and style guides for streamlining cross-language terminology across six engineering fields.
+              </li>
+              <li>Scaled a new team from the ground up and significantly increased customer satisfaction of relevant products.
+              </li>
+              <li>Employee of the Year award - 2022.</li>
+            </ul>
+          <li class="lead pt-3">Technical Writer & Editor</li>
+          <li><span>Saint Island International Patent & Law Offices</span><br />Aug 2011 - Jul 2016</li>
+            <ul class="job-description py-2">
+                <li>Wrote, translated, and edited technical/non-technical documents for patent and trademark applications.
                 </li>
-                <li>Reached out to overseas organizations and acted as communications liaison.
+                <li>Analyzed and drafted reports on USPTO Office Actions across diverse engineering fields.
                 </li>
-            </ul>        
-    </div>
-  </section>
-
-  <!-- Certificates -->
-  <section id="certificates">
-    <div class="container text-center col-xxl-8">
-      <h3 class="py-3">Certificates</h3>
-      <div id="carouselExampleIndicators" class="carousel slide py-5" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="cert-image" src="./assets/images/upenn-programming-cert.png" alt="certificate in python and java from UPenn">
-          </div>
-          <div class="carousel-item">
-            <img class="cert-image" src="./assets/images/harvard-cs50-cert.png" id="harvard-cert" alt="CS50 certificate from Harvard">
-          </div>
-          <div class="carousel-item">
-            <img class="cert-image" src="./assets/images/jhu-data-modelling-cert.png" alt="certificate in data modelling from John Hopkins">
-          </div>
-          <div class="carousel-item">
-            <img class="cert-image" src="./assets/images/google-ux-cert.png" alt="certificate in UX design from Google">
-          </div>
-          <div class="carousel-item">
-            <img class="cert-image" src="./assets/images/google-marketing-cert.png" alt="certificate in digital marketing from Google">
-          </div>
-          <div class="carousel-item">
-            <img class="cert-image" src="./assets/images/mit-cultural-awareness-cert.png" alt="certificate in cultural awareness from MIT">
-          </div>
-          <div class="carousel-item">
-            <img class="cert-image" src="./assets/images/meta-full-stack-cert.png" alt="certificate in full-stack development from Meta">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+                <li>Designed and taught curriculum for training engineers in patent translation.
+                </li>
+            </ul>
+            <li class="lead pt-3">Intellectual Property Administrator</li>
+            <li><span>Sohare Information Co. Ltd.</span><br />Jul 2009 - Jun 2011</li>
+              <ul class="job-description py-2">
+                  <li>Contributed to design of company website and in-house software, managed IP portfolios therewith.
+                  </li>
+                  <li>Reached out to overseas organizations and acted as communications liaison.
+                  </li>
+              </ul>        
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+      <div class="container text-center col-xxl-8">
+        <h3 class="py-3">Certificates</h3>
+        <div id="carouselExampleIndicators" class="carousel slide py-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="cert-image" src="./assets/images/upenn-programming-cert.png" alt="certificate in python and java from UPenn">
+            </div>
+            <div class="carousel-item">
+              <img class="cert-image" src="./assets/images/harvard-cs50-cert.png" id="harvard-cert" alt="CS50 certificate from Harvard">
+            </div>
+            <div class="carousel-item">
+              <img class="cert-image" src="./assets/images/jhu-data-modelling-cert.png" alt="certificate in data modelling from John Hopkins">
+            </div>
+            <div class="carousel-item">
+              <img class="cert-image" src="./assets/images/google-ux-cert.png" alt="certificate in UX design from Google">
+            </div>
+            <div class="carousel-item">
+              <img class="cert-image" src="./assets/images/google-marketing-cert.png" alt="certificate in digital marketing from Google">
+            </div>
+            <div class="carousel-item">
+              <img class="cert-image" src="./assets/images/mit-cultural-awareness-cert.png" alt="certificate in cultural awareness from MIT">
+            </div>
+            <div class="carousel-item">
+              <img class="cert-image" src="./assets/images/meta-full-stack-cert.png" alt="certificate in full-stack development from Meta">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <section>
-    <div class="container text-center col-xxl-8 px-5 pt-5">
-      <div class="footer pt-5">
-        <div class="col-lg-8">
-          <h6 class="blue-heading">HAVE SOMETHING IN MIND?</h6>
-          <h3 id="footer-head" class="mb-4">Let's Work Together</h3>
-          <p class="small-text">As a part-time student at Harvard Extension School (Harvard College's nighttime counterpart for working professionals), I tend to balance an extra 30 hours/week studying CS on top of my full-time job.
-            I also have tons of fun broadening my skills and perception via other asynchronous tech courses.
-          </p>
-          <div id="contact-box" class="lets-chat-box">
-            <a class="button-text" href="./contact.html"><img src="./assets/images/mail.png" height="20"> CONTACT ME</a>
+  <footer>
+    <section>
+      <div class="container text-center col-xxl-8 px-5 pt-5">
+        <div class="footer pt-5">
+          <div class="col-lg-8">
+            <h6 class="blue-heading">HAVE SOMETHING IN MIND?</h6>
+            <h3 id="footer-head" class="mb-4">Let's Work Together</h3>
+            <p class="small-text">As a part-time student at Harvard Extension School (Harvard College's nighttime counterpart for working professionals), I tend to balance an extra 30 hours/week studying CS on top of my full-time job.
+              I also have tons of fun broadening my skills and perception via other asynchronous courses.
+            </p>
+            <div id="contact-box" class="lets-chat-box">
+              <a class="button-text" href="./contact.html"><img src="./assets/images/mail.png" height="20"> CONTACT ME</a>
+            </div>
           </div>
         </div>
+        <hr class="rule"/>
       </div>
-      <hr class="rule"/>
-    </div>
-  </section>
-  <section>
-    <div id="copyright" class="footer container col-xxl-8">
-      <p>Copyright © 2024 Christopher Chen</p>
-    </div>
-  </section>
+    </section>
+    <section>
+      <div id="copyright" class="footer container col-xxl-8">
+        <p>Copyright © <span id="copyright-year"></span> Christopher Chen</p>
+      </div>
+    </section>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="./index.js" charset="UTF-8"></script>
